@@ -1,5 +1,5 @@
 {
-  "name": "primer-css",
+  "name": "carbon",
   "ignore": [
     "docs/",
     ".gitignore",
@@ -15,5 +15,6 @@
   ],
   "dependencies": {
     "octicons": "*"
-  }
+  },
+  "private": true
 }

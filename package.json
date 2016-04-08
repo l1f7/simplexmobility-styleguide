@@ -1,13 +1,13 @@
 {
-  "name": "primer-css",
-  "version": "3.0.1",
-  "homepage": "http://primercss.io",
-  "author": "GitHub, Inc.",
+  "name": "carbon",
+  "version": "0.1.0",
+  "homepage": "http://l1f7.github.io/simplexmobility-styleguide/",
+  "author": "Lift Interactive",
   "scss": "./scss/primer.scss",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/primer/primer.git"
+    "url": "git+https://github.com/l1f7/simplexmobility-styleguide.git"
   },
   "devDependencies": {
     "autoprefixer-core": "~5.2.1",
@@ -22,7 +22,7 @@
   },
   "description": "Primer is the CSS toolkit that powers GitHub's front-end design. It's purposefully limited to common components to provide our developers with the most flexibility, and to keep GitHub uniquely *GitHubby*. It's built with SCSS and available via Bower, so it's easy to include all or part of it within your own project.",
   "bugs": {
-    "url": "https://github.com/primer/primer/issues"
+    "url": "https://github.com/l1f7/simplexmobility-styleguide/issues"
   },
   "main": "css/primer.css",
   "directories": {
@@ -36,5 +36,6 @@
     "css",
     "github",
     "primercss"
-  ]
+  ],
+  "private": true
 }

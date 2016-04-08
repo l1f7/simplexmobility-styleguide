@@ -94,7 +94,7 @@ module.exports = function(grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:primer/primer.git',
+          remote: 'git@github.com:l1f7/simplexmobility-styleguide.git',
           branch: 'gh-pages'
         }
       }
