@@ -3,7 +3,7 @@ layout: page
 title: Scaffolding
 ---
 
-Scaffolding refers to the global resets and dependencies that Primer is built upon.
+Scaffolding refers to the global resets and dependencies that Carbon is built upon.
 
 ## Contents
 
@@ -12,7 +12,7 @@ Scaffolding refers to the global resets and dependencies that Primer is built up
 
 ## HTML5 doctype
 
-Primer makes use of certain HTML elements and CSS properties that **require** the use of the HTML5 doctype. Include it at the beginning of all your pages.
+Carbon makes use of certain HTML elements and CSS properties that **require** the use of the HTML5 doctype. Include it at the beginning of all your pages.
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -23,8 +23,8 @@ Primer makes use of certain HTML elements and CSS properties that **require** th
 
 ## Box-sizing
 
-We reset `box-sizing` to `border-box` for every element in Primer. This allows us to more easily assign widths to elements that also have `padding` and `border`s.
+We reset `box-sizing` to `border-box` for every element in Carbon. This allows us to more easily assign widths to elements that also have `padding` and `border`s.
 
-## Built on Normalize
+## Built on Bootstrap
 
-For improved cross-browser rendering, we use [Normalize.css](http://necolas.github.io/normalize.css/) to correct small inconsistencies across browsers and devices.
+Bootstrap’s [Official Sass port](http://getbootstrap.com/css/#sass) that is.
