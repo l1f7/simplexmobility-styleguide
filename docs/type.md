@@ -3,7 +3,7 @@ layout: page
 title: Typography
 ---
 
-Headings, paragraphs, blockquotes, lists, and more have some global resets. It's worth noting these aren't the same as our Markdown styles.
+Headings, paragraphs, blockquotes, lists, and more have some global resets. It's worth noting these aren't the same as our documentation styles.
 
 ## Contents
 
@@ -13,12 +13,12 @@ Headings, paragraphs, blockquotes, lists, and more have some global resets. It's
 ## Headings
 
 {% example html %}
-<h1>h1. Primer heading</h1>
-<h2>h2. Primer heading</h2>
-<h3>h3. Primer heading</h3>
-<h4>h4. Primer heading</h4>
-<h5>h5. Primer heading</h5>
-<h6>h6. Primer heading</h6>
+<h1>h1. Carbon heading</h1>
+<h2>h2. Carbon heading</h2>
+<h3>h3. Carbon heading</h3>
+<h4>h4. Carbon heading</h4>
+<h5>h5. Carbon heading</h5>
+<h6>h6. Carbon heading</h6>
 {% endexample %}
 
 ## Body text
