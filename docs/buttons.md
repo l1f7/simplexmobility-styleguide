@@ -30,7 +30,11 @@ You can find them in two sizes: the default `.btn` and the smaller `.btn-sm`.
 
 ## Primary
 
-Primary buttons are green and are used to indicate the *primary* action on a page. When you need your buttons to stand out, use `.btn.btn-primary`. You can use it with both button sizes—just add `.btn-primary`.
+Primary buttons are used to indicate the *primary* action on a page. When you need your buttons to stand out, use `.btn.btn-primary`. You can use it with both button sizes—just add `.btn-primary`.
+
+Primary buttons should be selected carefully, with no more than one per section (ideally only one per page, although the primary page action can also be indicated by button size).
+
+The colour of primary buttons can be changed in the Branding settings.
 
 {% example html %}
 <button class="btn btn-primary" type="button">Primary button</button>
@@ -46,15 +50,6 @@ Danger buttons are red. They help reiterate that the intended action is importan
 <button class="btn btn-sm btn-danger" type="button">Small danger button</button>
 {% endexample %}
 
-## Outline
-
-Outline buttons downplay an action as they appear like boxy links. Just add `.btn-outline` and go.
-
-{% example html %}
-<button class="btn btn-outline" type="button">Outline button</button>
-<button class="btn btn-sm btn-outline" type="button">Outline button</button>
-{% endexample %}
-
 ## Disabled state
 
 Disable `<button>` elements with the boolean `disabled` attribute and `<a>` elements with the `.disabled` class.
@@ -64,8 +59,6 @@ Disable `<button>` elements with the boolean `disabled` attribute and `<a>` elem
 <a class="btn disabled" href="#" role="button">Disabled button</a>
 {% endexample %}
 
-Similar styles are applied to primary, danger, and outline buttons:
-
 {% example html %}
 <button class="btn btn-primary" type="button" disabled>Disabled button</button>
 <a class="btn btn-primary disabled" href="#" role="button">Disabled button</a>
@@ -74,11 +67,6 @@ Similar styles are applied to primary, danger, and outline buttons:
 {% example html %}
 <button class="btn btn-danger" type="button" disabled>Disabled button</button>
 <a class="btn btn-danger disabled" href="#" role="button">Disabled button</a>
-{% endexample %}
-
-{% example html %}
-<button class="btn btn-outline" type="button" disabled>Disabled button</button>
-<a class="btn btn-outline disabled" href="#" role="button">Disabled button</a>
 {% endexample %}
 
 ## Block buttons
@@ -106,7 +94,7 @@ You can easily append a count to a **small button**. Add the `.with-count` class
 </div>
 {% endexample %}
 
-You can also use the [counter](../utilities/#counter) component within buttons:
+You can also use the [badge](../utilities/#counter) component within buttons:
 
 {% example html %}
 <button class="btn" type="button">
@@ -120,11 +108,6 @@ You can also use the [counter](../utilities/#counter) component within buttons:
 </button>
 
 <button class="btn btn-danger" type="button">
-  Button
-  <span class="counter">12</span>
-</button>
-
-<button class="btn btn-outline" type="button">
   Button
   <span class="counter">12</span>
 </button>
@@ -165,7 +148,7 @@ Add `.btn-group-form` to `<form>`s within `.btn-group`s for proper spacing and r
   <button class="btn" type="button">Button</button>
 </div>
 {% endexample %}
-
+<!--
 ## Hidden text button
 
 Use `.hidden-text-expander` to indicate and toggle hidden text.
@@ -176,4 +159,4 @@ Use `.hidden-text-expander` to indicate and toggle hidden text.
 </span>
 {% endexample %}
 
-You can also make the expander appear inline by adding `.inline`.
+You can also make the expander appear inline by adding `.inline`. -->
