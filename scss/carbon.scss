@@ -1,0 +1,45 @@
+//
+// Main style manifest.
+//
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en");
+
+// 1. Config & helpers.
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+// 2. Vendor & plugin styles.
+//= require datatables
+//= require datatables-fixedcolumns
+//= require datatables-buttons
+//= require datatables-select
+//= require datatables-colreorder
+//= require font-awesome
+//= require formtastic-bootstrap
+//= require OwlCarousel2
+//= require OwlCarousel2/owl.theme.green
+@import "vendor/bootstrap-sprockets";
+@import "vendor/bootstrap";
+@import "vendor/bootstrap_and_overrides";
+@import "vendor/animate";
+@import "vendor/keys";
+
+@import "themes/inspina";
+
+// 3. Base stuff.
+@import "base/typography";
+
+// 4. Layout section styles.
+@import "layout/header";
+@import "layout/sidebar";
+
+// 5. Components.
+@import "components/buttons";
+
+// 6. Page-specific styles.
+// @import "pages/dashboard";
+
+// Shamefile. Throw quick fixes/hacks here for later refactoring.
+// @import "shame";
