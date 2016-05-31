@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'css/primer.css': 'scss/primer.scss'
+          'css/carbon.css': 'scss/carbon.scss'
         }
       }
     },
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
           'TotalImportantKeywords',
           'TotalMediaQueries'
         ],
-        file: "css/.primer-stats.md",
+        file: "css/.carbon-stats.md",
         usePackage: true
       },
       src: [
