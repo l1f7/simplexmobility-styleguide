@@ -19,26 +19,38 @@
     <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/img/apple-touch-icon-precomposed.png">
     <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
   </head>
-  <body>
+  <body class="">
 
-    <header class="masthead">
+    <header class="navbar c-docs-nav">
       <div class="container">
-        <a href="{{ site.baseurl }}/" class="masthead-logo">
-          <span class="mega-octicon octicon-package"></span>
-          Carbon
-        </a>
+        <div class="navbar-header">
+          <a href="{{ site.baseurl }}/" class="navbar-brand">
+            <span class="mega-octicon octicon-package"></span>
+            Carbon
+          </a>
+        </div>
 
-        <nav class="masthead-nav">
-          <a {% if page.layout == "page" %}class="active"{% endif %} href="{{ site.baseurl }}/scaffolding">Docs</a>
-          <a {% if page.title == "About" %}class="active"{% endif %} href="{{ site.baseurl }}/about">About</a>
-          <a href="{{ site.github.repo }}" target="_blank">GitHub</a>
-          <a href="{{ site.github.repo }}/blob/master/README.md#install" target="_blank">Install</a>
+        <nav class="navbar-right">
+          <ul class="nav navbar-nav">
+            <li>
+              <a {% if page.layout == "page" %}class="active"{% endif %} href="{{ site.baseurl }}/scaffolding">Docs</a>
+            </li>
+            <li>
+              <a {% if page.title == "About" %}class="active"{% endif %} href="{{ site.baseurl }}/about">About</a>
+            </li>
+            <li>
+              <a href="{{ site.github.repo }}" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a href="{{ site.github.repo }}/blob/master/README.md#install" target="_blank">Install</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
 
     {% if page.title == "Home" %}
-      <div class="jumbotron">
+      <div class="jumbotron c-docs-jumbotron">
         <div class="container">
           <h1>Carbon</h1>
           <p>The CSS toolkit and guidelines that power argon.simplexmobility.com.</p>
@@ -50,12 +62,12 @@
       </div>
 
       <div class="container about-that">
-        <div class="columns">
-          <div class="one-half column">
+        <div class="row">
+          <div class="col-sm-4">
             <h2>Open-source</h2>
             <p>Available for use under the MIT license and built with open source projects like SCSS, Jekyll, Grunt, and more.</p>
           </div>
-          <div class="one-half column">
+          <div class="col-sm-4">
             <h2>Build tools</h2>
             <p>Includes a small Gruntfile for compiling our SCSS, Autoprefixer for vendor prefixes, and Parker for CSS stats.</p>
           </div>
@@ -66,7 +78,7 @@
     <div class="container">
       {{ content }}
 
-      <footer class="footer">
+      <footer class="footer c-docs-footer">
         Copyright Simplex Mobility Inc. {{ site.time | date: '%Y' }}.<br>
         Created and maintained by Lift Interactive. <strong>Currently v{{ site.version }}.</strong>
       </footer>

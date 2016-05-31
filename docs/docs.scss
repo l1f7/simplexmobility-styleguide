@@ -101,15 +101,101 @@ html {
 body {
   font-family: "Helvetica Neue", $body-font;
   font-size: 1rem;
+  line-height: 1.4;
 }
 
-// Make containers responsive
-.container {
-  width: auto;
-  max-width: 1020px;
-  padding-left: 20px;
-  padding-right: 20px;
+
+.c-docs-nav {
+  border-radius: 0;
 }
+
+.navbar {
+  background-color: $brand-primary-color;
+
+  > .container {
+
+    .navbar-brand {
+      display: inline-block;
+      height: auto;
+      padding: 1rem 15px;
+      font-size: 1.5rem;
+      line-height: 32px;
+      color: $white;
+
+      .mega-octicon {
+        float: left;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.navbar-nav {
+
+  > li {
+
+    > a {
+      padding: 1rem;
+      font-weight: 500;
+      line-height: 32px;
+      color: rgba($white, 0.5);
+
+      &:hover,
+      &:focus {
+        color: $white;
+        background-color: rgba($white, 0.25);
+      }
+    }
+  }
+}
+
+
+.c-docs-jumbotron {
+  padding: 6rem 0 8rem;
+  margin-top: -20px;
+  color: $white;
+  background-color: #2e4051;
+  background-image: linear-gradient(to bottom, #425566, #263848);
+  background-position: 50%;
+  background-size: 200%;
+  border-radius: 0;
+
+  p {
+    color: #c0c6cb;
+  }
+}
+
+
+.c-docs-sidenav {
+
+  > li {
+
+    > a {
+      font-weight: 500;
+
+      &:hover,
+      &:focus {
+        color: $brand-secondary-color;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+
+.c-docs-footer {
+  position: relative;
+}
+
+
+
+// Make containers responsive
+// .container {
+//   width: auto;
+//   max-width: 1020px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+// }
 
 .markdown-body {
   overflow: visible;
@@ -127,7 +213,7 @@ body {
 
   &:hover,
   &:active {
-    color: $text-blue;
+    color: $brand-primary-color;
     background: $bg-white;
     border-color: $white;
     box-shadow: none;
@@ -208,35 +294,35 @@ body {
 // Homepage jumbotron
 //
 
-.jumbotron {
-  margin-top: -2rem;
-  margin-bottom: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  background-color: $bg-blue;
-  font-size: 1.25rem;
-  color: $text-white;
-  text-align: center;
-
-  h1 {
-    font-size: 2.5em;
-    font-weight: normal;
-  }
-
-  .btn {
-    padding: .75em 1.15em;
-    font-size: inherit;
-    font-weight: normal;
-    line-height: 1;
-  }
-
-  @media (min-width: 34em) {
-    padding-top: 6rem;
-    padding-bottom: 8rem;
-    font-size: 1.5rem;
-    text-align: left;
-  }
-}
+// .jumbotron {
+//   margin-top: -2rem;
+//   margin-bottom: 3rem;
+//   padding-top: 2rem;
+//   padding-bottom: 4rem;
+//   background-color: $bg-blue;
+//   font-size: 1.25rem;
+//   color: $text-white;
+//   text-align: center;
+//
+//   h1 {
+//     font-size: 2.5em;
+//     font-weight: normal;
+//   }
+//
+//   .btn {
+//     padding: .75em 1.15em;
+//     font-size: inherit;
+//     font-weight: normal;
+//     line-height: 1;
+//   }
+//
+//   @media (min-width: 34em) {
+//     padding-top: 6rem;
+//     padding-bottom: 8rem;
+//     font-size: 1.5rem;
+//     text-align: left;
+//   }
+// }
 
 .about-that {
 
