@@ -1,0 +1,15 @@
+#customer_onboading_form {
+  .form-group {
+    margin-bottom: 25px;
+    label { margin-bottom: 0.3em }
+    .radio { margin-top: 0; margin-bottom: 0.3em; }
+    .inline_fields { margin-bottom: 6px; }
+    .inline_actions { line-height: 34px; }
+  }
+
+  .panel-heading a {
+    display: block;
+  }
+
+  a.accounting_codes { line-height: 34px; }
+}

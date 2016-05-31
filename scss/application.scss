@@ -1,0 +1,93 @@
+//= require datatables
+//= require datatables-fixedcolumns
+//= require datatables-buttons
+//= require datatables-select
+//= require datatables-colreorder
+//= require font-awesome
+//= require formtastic-bootstrap
+//= require OwlCarousel2
+//= require OwlCarousel2/owl.theme.green
+//= require vendor/animate
+//= require vendor/keys
+
+// Google Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en");
+
+// Bootstrap
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'bootstrap_and_overrides';
+
+@import 'branding';
+
+// INSPINIA Theme Elements
+@import "theme/typography";
+@import "theme/navigation";
+@import "theme/top_navigation";
+@import "theme/buttons";
+@import "theme/badgets_labels";
+@import "theme/elements";
+@import "theme/sidebar";
+@import "theme/base";
+@import "theme/pages";
+@import "theme/metismenu";
+@import "theme/spinners";
+
+// Landing page
+@import "theme/landing";
+
+// INSPINIA Skins
+// @import "theme/skins";
+@import "theme/md-skin";
+
+// Media query style
+@import "theme/media";
+
+@import 'margins';
+@import 'panels';
+@import 'labels_and_badges';
+@import 'rounded';
+
+@import 'select2';
+@import 'sweetalert';
+
+@import 'bootstrap-datepicker';
+
+@import 'nprogress';
+@import 'nprogress-bootstrap.css';
+
+@import 'vendor/acc-wizard';
+@import 'vendor/dropzone';
+@import 'vendor/jquery.treetable';
+@import 'vendor/normalize';
+@import 'vendor/nprogress-0.1.2';
+@import 'vendor/select2-bootstrap';
+
+@import 'datatables_overrides';
+@import 'modules';
+@import 'layout';
+@import 'search';
+@import 'graphing';
+@import 'usage';
+@import 'icons';
+@import 'navigation';
+@import 'quick_tools_requests';
+@import 'forms';
+@import 'onboarding';
+@import 'orders';
+@import 'packages';
+@import 'buttons';
+@import 'modals';
+
+@import 'jquery.ui.autocomplete.css';
+@import 'autocomplete';
+@import 'bootstrap-tagsinput';
+@import 'acc-wizard';
+
+@import 'devise';
+@import 'dashboard';
+@import 'customer_dashboard';
+@import 'reports';
+@import 'custom_report';
+
+@import 'uploadbutton';

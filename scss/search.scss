@@ -1,0 +1,116 @@
+/* Search - Top Bar */
+
+* .select2-offscreen[type=text], * .select2-offscreen:focus[type=text] {
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  outline: 0;
+  left: 0px;
+}
+
+// #search {
+//   margin: 10px 0;
+//   .select2-container, a {
+//     line-height: 26px;
+//     font-size: .9em;
+//     font-weight: 500;
+//     white-space: nowrap;
+//   }
+//   #search_query {
+//     width: 100%;
+//     white-space: nowrap;
+//   }
+// }
+
+// form.search, .select2-result-label {
+//   font-size: .9em !important;
+// }
+
+.select2 {
+  color: $brand-gray-dark;
+}
+
+.select2-highlighted {
+  background-color: $brand-primary-color !important;
+}
+
+.navbar.navbar-static-top #search {
+  display: inline-block;
+  position: absolute;
+  height: 59px;
+  width: 435px;
+  margin: 12.5px;
+  margin-left: 26px;
+  text-align: left;
+  .select2-arrow {
+    display: none;
+  }
+  .select2-chosen {
+    margin-right: 0;
+  }
+}
+
+.select2-results {
+  max-height: 500px;
+  li:last-child {
+    border: none;
+    .select2-result-label {
+      border: none;
+    }
+  }
+}
+
+.select2-no-results {
+  color: $brand-gray-dark;
+  font-size: .9em !important;
+  // font-weight: 500;
+  background-color: #fff !important;
+}
+
+.select2-result-label {
+  line-height: 1.2em;
+  border-bottom: 1px solid #eee;
+  padding: .6em .8em !important;
+}
+
+.select2-container .select2-choice, .select2-drop {
+  border: 1px solid #e5e6e7;
+  border-radius: 1px;
+  /* border-width: 0 1px 1px 1px; */
+  background-color: #fff;
+  color: #666;
+  .select2-arrow {
+    border-left: 1px solid #e5e6e7;
+  }
+}
+
+.select2-container .select2-choice div {
+  border-left: 1px solid $brand-gray-light;
+}
+
+.select2-container.select2-drop-above .select2-choice {
+  border-bottom-color: $brand-gray-light;
+}
+
+.select2-drop {
+  border-top: 0;
+  // ugly top margin hack
+  margin-top: -7px;
+}
+
+.select2-searching {
+  padding: .3em;
+  font-size: .85em;
+}
+
+.select2-result-label .select2-result-header{
+  border-bottom: none;
+  // font-weight: normal;
+  font-size: 1.3em;
+  padding: 0.5em 0 0 0 !important;
+}

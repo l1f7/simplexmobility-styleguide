@@ -1,0 +1,37 @@
+/* Sidebar Navigation  */
+
+.list-group-item, .dropdown-menu li {
+  .glyphicons {
+    vertical-align: top;
+    padding-left: 32px;
+    color: inherit;
+    &::before {
+      font-size: 24px;
+      color: inherit;
+    }
+  }
+}
+
+.dropdown-menu li {
+  .glyphicons {
+    padding-left: 24px;
+    &::before {
+      font-size: 18px;
+    }
+  }
+}
+
+.dropdown-menu li.title {
+  background-color: #eee;
+  padding: 4px 15px;
+}
+
+.nav .divider-vertical {
+  width: 10px;
+  height: 10px;
+}
+
+#carrier_btns .inactive {
+  background: grey;
+}
+

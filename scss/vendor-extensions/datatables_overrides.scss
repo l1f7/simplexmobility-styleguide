@@ -1,0 +1,297 @@
+/* Datatables */
+
+.datatable {
+  border-bottom: 1px solid $border-color;
+}
+
+table.dataTable thead {
+  .sorting-disabled, .sorting.sorting-disabled { background-image: none !important; }
+}
+
+.datatable a:not(.btn) {
+  color: $brand-primary-color;
+}
+
+table.dataTable {
+  td, tbody td {
+    border-top: 1px solid #ddd;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  thead td, thead th {
+    border-bottom: 1px solid #9EA3A7;
+  }
+
+  tfoot td, tfoot th {
+    border-top: 1px solid #9EA3A7;
+  }
+
+  &.no-footer {
+    border-bottom: 1px solid #9EA3A7;
+  }
+}
+
+.dataTables_wrapper {
+  padding: 20px;
+  margin-bottom: .8em;
+  border: none;
+}
+
+.ibox-content .dataTables_wrapper, .panel-body .dataTables_wrapper {
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Employee Devices > Usage History */
+
+section.active .dataTables_wrapper {
+  background: #eeefef;
+  border-color: $border-color;
+  margin: 1.5em 0 1em 0;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+           box-shadow: none;
+}
+
+div.dataTables_length label,
+div.dataTables_filter label,
+div.dataTables_info {
+  color: #555;
+  font-weight: 500;
+  padding: 1em 1em .5em 1em;
+  text-transform: capitalize;
+}
+
+div.dataTables_length {
+}
+div.dataTables_length label {
+  float: left;
+  text-align: left;
+}
+
+div.dataTables_length select {
+  width: 75px;
+}
+
+div.dataTables_filter label {
+  float: right;
+}
+div.dataTables_filter input {
+  display: inline-block !important;
+  width: auto !important;
+}
+
+div.dataTables_info {
+  padding-top: 0;
+}
+
+div.dataTables_paginate {
+  float: right;
+  margin: 0;
+  padding-right: 1em;
+}
+
+/* pagination */
+
+ul.pagination li.current a {
+  color: #fff !important;
+  font-weight: 500 !important;
+  background-color: $brand-primary-color !important;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+
+ul.pagination li.unavailable a, ul.pagination li a {
+  color: #444 !important;
+}
+
+table.dataTable {
+  clear: both;
+  margin-bottom: 1em !important;
+  max-width: none !important;
+  width: 100%;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+  cursor: pointer;
+  *cursor: hand;
+}
+
+table.dataTable thead .sorting { background: image-url('datatables/sort_both.png') no-repeat center right !important;}
+table.dataTable thead .sorting_asc { color: #0593dd; background: image-url('datatables/sort_asc.png') no-repeat center right !important; }
+table.dataTable thead .sorting_desc { color: #0593dd; background: image-url('datatables/sort_desc.png') no-repeat center right !important; }
+
+table.dataTable th:active {
+  outline: none;
+}
+
+/* Scrolling */
+div.dataTables_scrollHead table {
+  margin-bottom: 0 !important;
+}
+
+div.dataTables_scrollBody table {
+  border-top: none;
+  margin-bottom: 0 !important;
+}
+
+div.dataTables_scrollBody tbody tr:first-child th,
+div.dataTables_scrollBody tbody tr:first-child td {
+  border-top: none;
+}
+
+div.dataTables_scrollFoot table {
+  border-top: none;
+}
+
+/* TableTools styles */
+
+.table tbody tr.active td,
+.table tbody tr.active th {
+  background-color: #08C;
+  color: white;
+}
+
+.table tbody tr.active:hover td,
+.table tbody tr.active:hover th {
+  background-color: #0075b0 !important;
+}
+
+.table-striped tbody tr.active:nth-child(odd) td,
+.table-striped tbody tr.active:nth-child(odd) th {
+  background-color: #017ebc;
+}
+
+table.DTTT_selectable tbody tr {
+  cursor: pointer;
+  *cursor: hand;
+}
+
+div.DTTT {
+  float: left;
+  margin-bottom: 0;
+}
+
+div.DTTT .button:hover {
+  text-decoration: none !important;
+}
+
+ul.DTTT_dropdown.dropdown-menu li {
+  position: relative;
+}
+
+ul.DTTT_dropdown.dropdown-menu li:hover a {
+  background-color: #0088cc;
+  color: white !important;
+}
+
+/* TableTools information display */
+
+.DTTT_print_info {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 150px;
+  margin-left: -200px;
+  margin-top: -75px;
+  text-align: center;
+  color: #333;
+  padding: 10px 30px;
+
+  background: #ffffff; /* Old browsers */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#f3f3f3 89%,#f9f9f9 100%); /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #ffffff 0%,#f3f3f3 89%,#f9f9f9 100%); /* FF3.6+ */
+  background: -ms-linear-gradient(top, #ffffff 0%,#f3f3f3 89%,#f9f9f9 100%); /* IE10+ */
+  background: -o-linear-gradient(top, #ffffff 0%,#f3f3f3 89%,#f9f9f9 100%); /* Opera 11.10+ */
+  background: linear-gradient(top, #ffffff 0%,#f3f3f3 89%,#f9f9f9 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
+
+  opacity: 0.95;
+
+  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+div.DTTT_print_info h6 {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 28px;
+  margin: 1em;
+}
+
+div.DTTT_print_info p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* FixedColumns styles */
+
+div.DTFC_LeftHeadWrapper table,
+div.DTFC_LeftFootWrapper table,
+table.DTFC_Cloned tr.even {
+  background-color: white;
+}
+
+div.DTFC_LeftHeadWrapper table {
+  margin-bottom: 0 !important;
+}
+
+div.DTFC_LeftBodyWrapper table {
+  border-top: none;
+  margin-bottom: 0 !important;
+}
+
+div.DTFC_LeftBodyWrapper tbody tr:first-child th,
+div.DTFC_LeftBodyWrapper tbody tr:first-child td {
+  border-top: none;
+}
+
+div.DTFC_LeftFootWrapper table {
+  border-top: none;
+}
+
+.odd {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-width: 1px 0 1px 0;
+}
+
+.table-borderless tr:nth-child(odd) {
+  background-color: transparent;
+}
+
+.roaming-packages tr:nth-child(odd), .order-items tr:nth-child(odd) {
+  background: none;
+}
+
+table thead tr:first-child {
+  background-color: #fff !important;
+}
+
+.dataTables_wrapper div.dataTables_processing {
+  height: 100%;
+  margin-top: -75px;
+  opacity: 0.8;
+  color: $brand-primary-color;
+}

@@ -1,0 +1,156 @@
+.carrier {
+  width: 100%;
+  height: 40px;
+  &.telus { background: transparent image-url('carriers/telus.png') top center no-repeat; background-size: 145px 27px; }
+  &.bell { background: transparent image-url('carriers/bell.png') top center no-repeat; background-size: 65px 39px; }
+  &.mts { background: transparent image-url('carriers/mts.png') top center no-repeat; background-size: 95px 37px; }
+  &.rogers { background: transparent image-url('carriers/rogers.png') top center no-repeat; background-size: 140px 32px; }
+  &.sasktel { background: transparent image-url('carriers/sasktel.png') top center no-repeat; background-size: 137px 25px; }
+  -ms-behavior: asset-url('vendor/backgroundsize.min.htc');
+}
+
+/* Devices */
+
+.device {
+  background-position: top center !important;
+  &.aircard { background: transparent image-url("devices/aircard.png"); }
+  &.android { background: transparent image-url("devices/android.png"); }
+  &.blackberry { background: transparent image-url("devices/blackberry.png"); }
+  &.cellphone, &.cell { background: transparent image-url("devices/cellphone.png"); }
+  &.hub { background: transparent image-url("devices/hub.png"); }
+  &.iphone { background: transparent image-url("devices/iphone.png"); }
+  &.mike { background: transparent image-url("devices/mike.png"); }
+  &.modem { background: transparent image-url("devices/modem.png"); }
+  &.ppager, &.pager { background: transparent image-url("devices/pager.png"); }
+  &.tablet { background: transparent image-url("devices/tablet.png"); }
+  &.windowsphone, &.windows.phone { background: transparent image-url("devices/windows.png"); }
+  &.adsl { background: transparent image-url('wirelines/blue_icons/adsl.png');}
+  &.extension { background: transparent image-url('wirelines/blue_icons/extension.png');}
+  &.fax { background: transparent image-url('wirelines/blue_icons/fax.png');}
+  &.ibl_business_line { background: transparent image-url('wirelines/blue_icons/ibl_business_line.png');}
+  &.isdn { background: transparent image-url('wirelines/blue_icons/isdn.png');}
+  &.toll_free { background: transparent image-url('wirelines/blue_icons/toll_free.png');}
+  background-repeat: no-repeat !important;
+  width: 100%;
+  -ms-behavior: asset-url('vendor/backgroundsize.min.htc');
+  overflow:hidden;
+}
+
+.device-gray {
+  background-position: top center !important;
+  &.aircard { background: transparent image-url("devices/aircard-gray.png"); }
+  &.android { background: transparent image-url("devices/android-gray.png"); }
+  &.blackberry { background: transparent image-url("devices/blackberry-gray.png"); }
+  &.cellphone, &.cell { background: transparent image-url("devices/cellphone-gray.png"); }
+  &.hub { background: transparent image-url("devices/hub-gray.png"); }
+  &.iphone { background: transparent image-url("devices/iphone-gray.png"); }
+  &.mike { background: transparent image-url("devices/mike-gray.png"); }
+  &.modem { background: transparent image-url("devices/modem-gray.png"); }
+  &.ppager, &.pager { background: transparent image-url("devices/pager-gray.png"); }
+  &.tablet { background: transparent image-url("devices/tablet-gray.png"); }
+  &.windowsphone, &.windows.phone { background: transparent image-url("devices/windows-gray.png"); }
+  background-repeat: no-repeat !important;
+  width: 100%;
+  -ms-behavior: asset-url('vendor/backgroundsize.min.htc');
+  overflow:hidden;
+}
+
+.device.device-tiny, .device-gray.device-tiny {
+  background-size: 35px 35px !important;
+  height: 35px;
+}
+.device.device-small, .device-gray.device-small {
+  background-size: 40px 40px !important;
+  height: 40px;
+}
+.device.device-small-plus, .device-gray.device-small-plus {
+  background-size: 50px 60px !important;
+  height: 60px;
+}
+.device.device-med, .device-gray.device-med {
+  background-size: 75px 75px !important;
+  height: 75px;
+}
+.device.device-large, .device-gray.device-large {
+  background-size: 200px 200px !important;
+  height: 200px;
+}
+.device.device-xlarge, .device-gray.device-xlarge {
+  background-size: 285px 285px !important;
+  height: 285px;
+}
+.device.right, .device-gray.right {
+  background-position: top right !important;
+}
+
+/* Simplex Icon Font */
+
+.simplex-icons {
+  font-family: "simplex-icons";
+}
+
+@font-face {
+  font-family: 'simplex-icons';
+  src: asset-url('icons.eot?93861007');
+  src: asset-url('icons.eot?93861007#iefix') format('embedded-opentype'),
+       asset-url('icons.woff?93861007') format('woff'),
+       asset-url('icons.ttf?93861007') format('truetype'),
+       asset-url('icons.svg?93861007#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icons';
+    src: url('../font/icons.svg?93861007#icons') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "simplex-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-l {
+  font-size: 1.3em;
+}
+
+.icon-sim-card:before { content: '\e800'; } /* '' */
+.icon-voicemail-password:before { content: '\e801'; } /* '' */
+.icon-roaming:before { content: '\e802'; } /* '' */
+.icon-number-change:before { content: '\e803'; } /* '' */
+.icon-edit:before { content: '\e804'; } /* '' */
+.icon-device:before { content: '\e805'; } /* '' */
+.icon-account-change:before { content: '\e806'; } /* '' */
+.icon-order-hardware:before { content: '\e807'; } /* '' */

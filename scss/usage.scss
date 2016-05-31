@@ -1,0 +1,20 @@
+.usage-low {
+  color: $brand-success;
+  &.progress-bar, .progress-bar {
+    background: $brand-success;
+  }
+}
+
+.usage-medium {
+  color: $brand-warning;
+  &.progress-bar, .progress-bar {
+    background: $brand-warning;
+  }
+}
+
+.usage-high {
+  color: $brand-danger;
+  &.progress-bar, .progress-bar {
+    background: $brand-danger;
+  }
+}

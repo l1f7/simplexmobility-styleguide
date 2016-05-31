@@ -1,0 +1,218 @@
+#custom_report {
+  #custom_report_devices_container {
+    .dataTables_info {
+      text-transform: none;
+      position: absolute;
+      top: -15px;
+      padding: 0;
+      font-size: 1em;
+      line-height: 34px;
+    }
+
+    .dataTables_filter {
+      width: 100%;
+      label {
+        margin: 0;
+        padding: 0;
+        width: 30% !important;
+        display: block;
+        float: right;
+      }
+      input {
+        width: 100% !important;
+        text-align: center;
+      }
+    }
+
+    .dt-buttons {
+      position: absolute;
+      left: 0;
+      top: 15px;
+      .btn {
+        margin-right: 5px;
+      }
+      .devices-table-columns-button {
+        margin-left: 150px;
+      }
+    }
+    .dataTables_scroll {
+      padding-top: 1em;
+    }
+
+    tr.selected {
+      background-color: #CADBFA;
+    }
+
+    th:not(.column_reordering_disabled) {
+      cursor: move;
+    }
+  }
+
+  #customer_report_devices_found {
+    position: absolute;
+  }
+
+  .devices_columns_list {
+    .checkbox {
+      a { display: none; }
+      &:hover {
+        background-color: #f9f9f9;
+        a { display: block; }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    background: white;
+    border: 1px solid #d2d2d2;
+    width: 300px;
+    float: none;
+    padding: 0 1em;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 2002;
+    top: 37px;
+    &:after, &:before {
+      bottom: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+    &:after {
+      border-color: rgba(210, 210, 210, 0);
+      border-bottom-color: #d2d2d2;
+      border-width: 10px;
+      margin-left: -10px;
+    }
+    &:before {
+      border-color: rgba(210, 210, 210, 0);
+      border-bottom-color: #d2d2d2;
+      border-width: 11px;
+      margin-left: -11px;
+    }
+  }
+
+  .custom_report_devices_breakdown {
+    h1, h2, h3, h4 { margin: 0 }
+    h4 { margin-bottom: 5px }
+    .text-opacity { opacity: 0.3 }
+    [ng-click] {
+      display: inline-block;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        transform: scale(1.3);
+      }
+      border-bottom: 1px dotted #676a6c;
+      &.green     { border-bottom: 1px dotted #2ecc71 }
+      &.yellow    { border-bottom: 1px dotted #f1c40f }
+      &.red       { border-bottom: 1px dotted #e74c3c }
+      &.text-info { border-bottom: 1px dotted #337ab7 }
+    }
+    .ibox { text-align: center }
+    .ibox-content { padding: 5px 20px 15px 20px }
+    .col-xs-1 {
+      padding: 0 5px;
+      border-right: 1px dotted lightgrey;
+      &:last-child { border: none; }
+    }
+  }
+
+  .cr_is_loading {
+    .custom_report_devices_breakdown { opacity: 0.2; }
+    #custom_report_devices_container { opacity: 0.1; }
+  }
+
+  .custom_report_no_filters {
+    color: #BEC7CD;
+    margin-top: -15px;
+  }
+
+  .custom_report_enabled_filter {
+    overflow: hidden;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E4E4E4;
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .custom_report_enabled_filter_description {
+      text-align: left;
+      &.custom_report_filter_removed { text-decoration: line-through}
+    }
+  }
+
+  .cr_filter {
+    display: block;
+    .checkbox {
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+      border-bottom: 1px dotted #D5D5D5;
+    }
+    &:last-child .checkbox {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  .custom_report_filter {
+    .dropdown .btn {
+      margin-bottom: 10px;
+      background: white;
+      border: none;
+      border-bottom: 1px solid #DEDEDE;
+      border-radius: 0;
+    }
+    .ibox-content {
+      padding-bottom: 15px;
+    }
+  }
+
+  ////////////// ANGULAR ANIMATIONS
+  .animate-repeat.ng-move,
+  .animate-repeat.ng-enter,
+  .animate-repeat.ng-leave {
+    transition: all ease-out 0.5s;
+  }
+
+  .animate-repeat.ng-leave.ng-leave-active,
+  .animate-repeat.ng-move,
+  .animate-repeat.ng-enter {
+    opacity: 0;
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .animate-repeat.ng-leave,
+  .animate-repeat.ng-move.ng-move-active,
+  .animate-repeat.ng-enter.ng-enter-active {
+    opacity: 1;
+    max-height: 36px;
+  }
+
+  .animate-show {
+    opacity: 1;
+  }
+
+  .animate-show.ng-hide-add, .animate-show.ng-hide-remove {
+    transition: all ease-out 0.5s;
+    max-height: 100px;
+    overflow: hidden;
+  }
+
+  .animate-show.ng-hide {
+    opacity: 0;
+    max-height: 0;
+  }
+  table.dataTable td.select-checkbox:before, table.dataTable td.select-checkbox:after {
+    top: 50%
+  }
+}

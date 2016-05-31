@@ -1,0 +1,67 @@
+/* Buttons */
+
+.btn {
+  color: white;
+}
+
+// quick tools dropdown
+.f-dropdown:before, .f-dropdown:after {
+  left: 18px;
+}
+
+// edit tools dropdown
+.f-dropdown.right:before, .f-dropdown.right:after {
+  right: 16px;
+}
+
+.split.button.secondary span:before, .dropdown.button.secondary:before {
+  border-color: $brand-highlight transparent transparent transparent;
+}
+
+ul.f-dropdown {
+  max-width: 270px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+  -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+  box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+}
+
+ul.f-dropdown li {
+  border-bottom: 1px dashed $border-color;
+  padding: .85em 0;
+}
+
+ul.f-dropdown li:first-child {
+  padding-top: 0;
+}
+
+ul.f-dropdown li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+ul.f-dropdown li a {
+  color: $brand-primary-color !important;
+}
+
+#drop li {
+  background: none !important;
+  cursor: auto;
+}
+
+.btn-fileinput {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  vertical-align: top;
+  input {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    font-size: 600px;
+  }
+}

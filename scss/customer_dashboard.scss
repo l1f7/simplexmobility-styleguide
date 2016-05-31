@@ -1,0 +1,58 @@
+.customer_dashboard {
+  .with_border-left {
+    border-left: 1px dotted lightgrey;
+  }
+
+  .ibox-content {
+    padding: 10px 20px;
+  }
+
+  .ibox-content {
+    h1 {
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+  }
+
+  .ibox-content-billing_cycles {
+    overflow: hidden;
+    transition: all 1s;
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  .ibox-title {
+    height: auto;
+    min-height: auto;
+    h5 {
+      float: none;
+      display: block;
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .customer_dashboard_tabs {
+    position: relative !important;
+  }
+
+  .top_usage_device {
+    padding: 0;
+    .top_usage_device_info {
+      padding: 0;
+      margin-left: -7px;
+      .number, .label-meta {
+        display: inline-block;
+      }
+    }
+  }
+
+  .top_data_usage {
+    .collapse, .collapsing {
+      .row {
+        margin-top: 1em;
+      }
+    }
+  }
+}

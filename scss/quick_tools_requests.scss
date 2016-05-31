@@ -1,0 +1,31 @@
+#quick_tools_requests {
+  .failure { color: red; }
+  .success { color: green; }
+  .new     { color: gray; }
+}
+
+.highlight {
+  background: yellow;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.modal.in {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+body.loading {
+  overflow: hidden;
+  .modal {
+    display: block;
+  }
+}

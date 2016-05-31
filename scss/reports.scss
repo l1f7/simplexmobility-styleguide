@@ -1,0 +1,11 @@
+.average_cost_report_table {
+  th {
+    vertical-align: middle !important;
+  }
+  td {
+    vertical-align: middle !important;
+    .small {
+      em: 0.8em;
+    }
+  }
+}

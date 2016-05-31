@@ -1,0 +1,144 @@
+ol.steps {
+  list-style-type: none;
+  margin: 0 0 30px 0;
+  margin-left: -10px;
+  padding: 0;
+
+  &.steps_2 li { width: (100%/2) - 3%; }
+  &.steps_3 li { width: 30% }
+  &.steps_4 li { width: (100%/4) - 2%; }
+  &.steps_5 li { width: (100%/5) - 2%; }
+  &.steps_6 li { width: (100%/6) - 2%; }
+  &.steps_7 li { width: (100%/7) - 2%; }
+  &.steps_8 li { width: (100%/8) - 2%; }
+  &.steps_9 li { width: (100%/9) - 2%; }
+
+  li {
+    padding: 10px 12px 10px 30px;
+    width: 108px;
+    margin-left: 10px;
+    background: #efefef;
+    position: relative;
+    color: #000;
+    line-height: 20px;
+    display: block;
+    float: left;
+
+    &:before {
+      width: 0;
+      height: 0;
+      border-top: 20px inset transparent;
+      border-bottom: 20px inset transparent;
+      border-left: 20px solid #fff;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+    }
+
+    &:after {
+      width: 0;
+      height: 0;
+      border-top: 20px inset transparent;
+      border-bottom: 20px inset transparent;
+      border-left: 20px solid #efefef;
+      position: absolute;
+      content: "";
+      top: 0;
+      right: -20px;
+      z-index: 2;
+    }
+
+    &:first-child:before {
+      border: none;
+    }
+
+    &:first-child {
+      padding-left: 15px;
+    }
+
+    a { color: #000; }
+
+    &:last-child {
+      &:after {
+        border: none;
+      }
+    }
+
+    &.long_step {
+      // Need this for steps with long names like Finishing and Coating
+      width: auto;
+    }
+
+    &.current {
+      color: #fff;
+      background: #0593dd;
+
+      a { color: #fff; }
+
+      &:after {
+        border-left-color: #0593dd;
+      }
+    }
+
+    &.completed {
+      color: #fff;
+      background: grayLight;
+
+      a { color: #fff; }
+
+      &:after {
+        border-left-color: grayLight;
+      }
+    }
+  }
+}
+
+.table-backgroundless {
+  & > tbody > tr { background: none !important; }
+}
+
+.table-borderless {
+  tr { border: none !important; }
+  td { border: none !important; }
+}
+
+[ng-click] {
+  cursor: pointer;
+}
+
+.order-items {
+  > tbody > tr > td {
+    padding: 5px 5px !important;
+    // padding-left: 10px !important;
+  }
+  td { padding: 1px 0 !important; }
+}
+
+// I want aligned order items columns for all orders table.
+.orders .order-items {
+  > tbody > tr {
+    td:nth-child(1) { width: 33%; } // status
+    td:nth-child(2) { width: 40%; } // info
+    td:nth-child(3) { white-space: nowrap; } // appprovers
+  }
+}
+
+.approval-warning {
+  color: #F0AD4E;
+  span { display: none; }
+}
+
+.approval-success {
+  color: green;
+  span { display: none; }
+}
+
+.approval-danger {
+  color: red;
+  span { display: none; }
+}
+
+.approval_info .popover {
+  max-width: 100%;
+}

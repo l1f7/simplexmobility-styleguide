@@ -1,0 +1,19 @@
+.acc-wizard-sidebar > li.acc-wizard-disabled {
+  & > span, & > a {
+    font-size: 1.2em;
+    color: #bbb;
+  }
+  &::before {
+    background-color: #bbb;
+  }
+}
+
+ol.acc-wizard-sidebar li::before {
+  margin-top: -1.1em;
+}
+
+.acc-wizard-sidebar > li.acc-wizard-completed.active {
+  &::after, &::before, & > a {
+    color: $brand-yellow;
+  }
+}

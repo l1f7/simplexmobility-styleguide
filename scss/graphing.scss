@@ -1,0 +1,92 @@
+.graph-tooltip {
+  background: rgba(64, 64, 64, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 3px 0 rgba(128,128,128,0.3);
+  color: #fff;
+  padding: 5px;
+  font-size: 0.8rem;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+#monthly-total .nv-line .nv-point {
+  fill-opacity: 1;
+  stroke-opacity: 1;
+  fill: #585F69;
+  stroke: #585F69;
+}
+
+.nvd3.nv-indentedtree .clickable {
+  text-decoration: underline;
+  color: $link-color;
+}
+
+.upper-first{
+  text-transform: capitalize;
+}
+
+.movement{
+  font-size:14px;
+  font-weight:normal;
+}
+
+.nvd3 .nv-groups path.nv-line {
+  stroke-width: 2.5px;
+  filter: drop-shadow( -1px -1px 2px rgba(0, 0, 0, 0.25) );
+}
+
+.dashboard_billing_accounts_stats_by_months {
+  .popover-content, .popover {
+    width: 350px !important;
+    min-width: 350px !important;
+  }
+}
+
+.popover_link {
+  cursor: help;
+  &, &:hover {
+    text-decoration: none;
+  }
+  border-bottom: 1px dotted  #0593dd;
+}
+
+// Total Monthly Charges
+#roaming_overage_graph svg .nv-group {
+  & rect {
+    stroke-width: 1 !important;
+    stroke-opacity: 1 !important;
+  }
+
+  &.nv-series-2 rect {
+    stroke: #0593DD !important;
+    stroke-width: 1 !important;
+    stroke-opacity: 1 !important;
+  }
+}
+
+#wirelines_report_chart .nv-bar {
+  cursor: pointer;
+}
+
+.amcharts-balloon-div p:last-child {
+  margin-bottom: 0;
+}
+
+.sparkline {
+  position: relative;
+}
+
+.sparkline > div.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.balloon {
+  position: absolute;
+  display: none;
+  padding: 3px;
+  background: #fff;
+  border: 1px solid #999;
+  z-index: 1500;
+}

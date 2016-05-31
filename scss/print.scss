@@ -1,0 +1,13 @@
+.only-printable { display: block !important; }
+.non-printable  { display: none !important; }
+
+body {
+  font-size: 10px;
+}
+
+h3 { font-size: 12px; line-height: 14px; margin-top: 2px; }
+h2 { font-size: 14px; line-height: 16px; margin-top: 2px; }
+
+.row-border {
+  margin: 0.5em 0px;
+}

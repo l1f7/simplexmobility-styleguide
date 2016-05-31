@@ -1,0 +1,85 @@
+$popover-max-width: 500px;
+
+kbd {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.popover.popover-wide {
+  max-width: 550px;
+}
+
+// bootstrap hack: fix content width inside hidden tabs
+// http://stackoverflow.com/a/23267110
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+    display: block;     // undo display:none
+    height: 0;          // height:0 is also invisible
+    overflow: hidden;   // no-overflow
+}
+.tab-content > .active,
+.pill-content > .active {
+    height: auto;       // let the content decide it
+}
+
+
+.tabs-container .tab-pane .panel-body {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  border: 1px solid #e7eaec;
+  border-top: none;
+  margin-bottom: 2px;
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+.col-centered {
+  display: inline-block;
+  float: none;
+}
+
+.collapse, .collapsing {
+  transition: height 0.5s ease;
+  -webkit-transition: height 0.5s ease;
+  -moz-transition: height 0.5s ease;
+  -ms-transition: height 0.5s ease;
+  -o-transition: height 0.5s ease;
+}
+
+.modal-lg {
+  width: 95%;
+}
+

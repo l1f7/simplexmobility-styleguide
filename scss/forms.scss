@@ -1,0 +1,27 @@
+/* Form adjustments */
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  background-color: #aaa !important;
+}
+
+.checkbox, .radio {
+  & .help-block {
+    font-size: 0.9em;
+    font-style: italic;
+  }
+}
+
+:checked+span.text-opacity {
+  color: inherit;
+  opacity: 1.0;
+}
+
+.select2-results .select2-highlighted {
+  & .text-danger, .text-warning, .text-info {
+    color: #fff;
+  }
+}
+
+[role=tooltip] {
+  z-index: 2002;
+}

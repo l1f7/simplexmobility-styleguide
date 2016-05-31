@@ -1,0 +1,262 @@
+/**
+* Variables
+*/
+
+$font-grey: #979696;
+$button-blue: #0593dd;
+
+
+/**
+* Fonts
+*/
+
+
+@font-face {
+    font-family: 'Museo';
+    src: url(font_path('museo/MuseoSans100.otf'));
+    font-weight: 100;
+}
+
+
+@font-face {
+    font-family: 'Museo';
+    src: url(font_path('museo/MuseoSans300.otf'));
+    font-weight: 300;
+}
+
+
+@font-face {
+    font-family: 'Museo';
+    src: url(font_path('museo/MuseoSans500.otf'));
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url(font_path('museo/MuseoSans700.otf'));
+    font-weight: 700;
+}
+
+
+/**
+* Mixins
+*/
+
+
+@mixin placeholder-style {
+  color: $font-grey;
+  font-family: 'Museo';
+  font-weight: 500;
+}
+
+@mixin input-type-text($url) {
+    background:#ebebeb image-url($url) 98% center no-repeat;
+    background-size: 26px 23px;
+    color: $font-grey;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    font-size: 16px;
+    font-family: 'Museo';
+    font-weight: 500;
+    height: 81px;
+    width: 100% !important;
+    box-shadow: none;
+}
+
+@mixin shared-button($color) {
+    color: $color;
+    font-size: 15px;
+    font-family: 'Museo', sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+/* -----------------------------------*/
+/*------------- Code -----------------*/
+/* -----------------------------------*/
+
+.devise_full_height {
+  height: 100%;
+
+/* Blockers */
+
+.pr_none {
+  padding-right: 0 !important;
+}
+
+.mr_none {
+  margin-right: 0 !important;
+}
+
+.reg-header {
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.devise_reg_block {
+  width: 400px;
+}
+
+/* Recovery Password Logo */
+
+.logo_white {
+  display: inline-block;
+  background: #0593dd;
+  border-radius: 10px !important;
+  padding: 20px;
+  text-align: center;
+  width: 90px;
+  height: 94px;
+
+  /* White Logo */
+  img {
+    width: 52px;
+    height: 51px;
+  }
+
+}
+
+.devise_header-title {
+  color: $font-grey;
+  padding-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 32px;
+  font-family: 'Museo';
+  font-weight: 100;
+}
+
+.forgot_password, .resend_instructions {
+
+  /* Inputs */
+
+  input[type=password] {
+    @include input-type-text('icons/asterisk.png')
+  }
+
+  input[type=email] {
+    @include input-type-text('icons/user.png')
+  }
+
+  input[type=text] {
+    @include input-type-text('icons/user.png')
+  }
+
+  .btn-custom {
+    background: $button-blue;
+    border-radius: 10px !important;
+    width: 100%;
+    height: 81px;
+    border: 0;
+    color: #fff;
+    font-family: 'Museo', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+
+    &:hover {
+      background: #0475B0;
+    }
+
+    &:active {
+      box-shadow: inset 0 1px 2px #003550;
+    }
+
+    &:disabled {
+      background: $font-grey !important;
+    }
+
+  }
+
+  .return_to_sign_in {
+    color: $font-grey;
+    font-size: 15px;
+    font-family: 'Museo', sans-serif;
+    font-weight: 300;
+  }
+
+  /* Shared Button */
+  .sign_in {
+    @include shared-button($font-grey)
+  }
+
+  .sign_up {
+    @include shared-button($button-blue)
+  }
+
+  .forgot_password {
+    @include shared-button($font-grey)
+  }
+
+  .shared_links {
+    margin-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  /* Placeholder */
+
+  ::-webkit-input-placeholder {
+    @include placeholder-style
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    @include placeholder-style
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    @include placeholder-style
+  }
+
+  :-ms-input-placeholder {
+     @include placeholder-style
+  }
+
+}
+
+.devise_remember_me {
+
+  input[type=checkbox] {
+    margin-left: 0;
+  }
+
+  label[for='user_remember_me'] {
+    margin-left: 10px;
+    font-family: 'Museo';
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+  }
+
+}
+
+
+.devise {
+  height: 100%;
+  background: transparent image-url('photos/sign_in_background.png') center center no-repeat;
+  background-size: 2731px 1500px;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1090px) {
+  .devise_header-title {
+    font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .devise_reg_block {
+    width: 100%;
+  }
+}
+
+} /* END .devise_full_height */
