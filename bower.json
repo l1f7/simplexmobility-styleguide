@@ -14,7 +14,8 @@
     "scss/primer.scss"
   ],
   "dependencies": {
-    "octicons": "*"
+    "octicons": "*",
+    "bootstrap-sass": "^3.3.6"
   },
   "private": true
 }
