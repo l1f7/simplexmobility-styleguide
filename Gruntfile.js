@@ -75,7 +75,8 @@ module.exports = function(grunt) {
         src: 'docs',
         dest: '_site',
         config: '_config.yml',
-        raw: "version: <%= pkg.version %>"
+        raw: "version: <%= pkg.version %>",
+        baseurl: ''
       },
       dist: {
         serve: false
