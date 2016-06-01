@@ -28,3 +28,5 @@ We reset `box-sizing` to `border-box` for every element in Carbon. This allows u
 ## Built on Bootstrap
 
 Bootstrap’s [Official Sass port](http://getbootstrap.com/css/#sass) that is.
+
+For styles over and above what’s provided by Bootstrap, we follow [the 7-1 pattern](https://sass-guidelin.es/#architecture) for organizing Sass partials. Subdirectories within the main `scss` directory also have documentation about what each one should contain.
