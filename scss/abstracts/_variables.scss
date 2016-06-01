@@ -1,0 +1,149 @@
+//
+// Global variables.
+//
+// Don't put any css styles into this file, because it's included
+// multiple times.
+//
+
+
+//
+// Colour variables.
+//
+
+// Brand colours.
+$brand-red:    #e74c3c;
+$brand-yellow: #f1c40f;
+$brand-green:  #2ecc71;
+$brand-blue:   #0593dd;
+$brand-grey:   #585f69;
+
+// Secondary palette.
+$red-muted:    #e26656;
+$red:          #ed4b4b;
+$orange:       #f37748;
+$orange-muted: #f19953;
+$orange-dark:  #e67e22;
+$green:        #34b977;
+$green-muted:  #659b79;
+$teal:         #40c6ba;
+$blue:         #047ebe;
+$blue-overlay: #207eb0;
+$blue-muted:   #64819f;
+$blue-dark:    #4765a0;
+$purple:       #9b6bcc;
+$purple-muted: #7f6ea5;
+$violet:       #b46c95;
+
+// Greyscale.
+$white:           #fff;
+$white-secondary: rgba($white, 0.7);
+$white-muted:     rgba($white, 0.3);
+$white-divider:   rgba($white, 0.12);
+
+$grey-100:        #f3f3f4;
+$grey-200:        #eee;
+$grey-300:        #ccc;
+$grey-400:        #777;
+$grey-500:        #676a6c;
+$grey-600:        #5e5e5e;
+$grey-800:        #333;
+$grey-900:        #222;
+
+$black-actual:    #000;
+$black:           rgba($black-actual, 0.87);
+$black-secondary: rgba($black-actual, 0.54);
+$black-muted:     rgba($black-actual, 0.38);
+$black-divider:   rgba($black-actual, 0.12);
+
+
+//
+// Bootstrap variables.
+//
+// These are variables expected by Bootstrap components.
+//
+
+// Colours.
+$gray-base:     $black-actual;
+$gray-darker:   $grey-900;
+$gray-dark:     $grey-800;
+$gray:          $grey-500;
+$gray-light:    $grey-400;
+$gray-lighter:  $grey-200;
+
+$brand-primary: $brand-blue;
+$brand-success: $brand-green;
+$brand-info:    $blue-muted;
+$brand-warning: $brand-yellow;
+$brand-danger:  $brand-red;
+
+
+// Scaffolding.
+$body-bg:               $white;
+$text-color:            $grey-500;
+$link-color:            $brand-primary !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+
+// Typography.
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:      "Adobe Caslon Pro", "adobe-caslon-pro", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif;
+
+$font-size-base:         14px !default;
+$font-size-large:        ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:        ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:           floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:           floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:           ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:           ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:           $font-size-base !default;
+$font-size-h6:           ceil(($font-size-base * 0.85)) !default; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:       1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:   floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:   inherit !default;
+$headings-font-weight:   500 !default;
+$headings-line-height:   1.1 !default;
+$headings-color:         inherit !default;
+
+
+
+
+
+//
+// Legacy vars.
+//
+$brand-primary-color:    #0593dd;
+$brand-secondary-color:  #2ecc71;
+$brand-tertiary-color:   #9b6bcc;
+$brand-quaternary-color: #e67e22;
+$brand-highlight:        #4765a0;
+
+$brand-nav-color: #333;
+
+$brand-red:    #e74c3c;
+$brand-green:  #2ecc71;
+$brand-yellow: #f1c40f;
+$brand-blue:   #0593dd;
+
+$brand-gray:       #6a6a6a;
+$brand-gray-dark:  #585f69;
+$brand-gray-light: #ccc;
+$brand-light:      #f5f5f5;
+
+$primary-color: $brand-primary-color;
+$neutral:       $brand-primary-color;
+
+// Utility Classes
+$border-color: #ccc;
+$link-color:   #0593dd;
+
+// Timeline
+$vertical: true;

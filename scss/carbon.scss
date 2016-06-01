@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en");
 
 // 1. Config & helpers.
-// @import "abstracts/variables";
+@import "abstracts/variables";
 // @import "abstracts/functions";
 // @import "abstracts/mixins";
 // @import "abstracts/placeholders";
@@ -33,8 +33,6 @@
 
 // 2a. Vendor style overrides.
 @import "vendor-extensions/bootstrap_and_overrides";
-
-@import "branding";
 
 // 0. Inspinia Bootstrap theme files.
 @import "themes/typography";
