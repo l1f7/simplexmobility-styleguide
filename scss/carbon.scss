@@ -34,6 +34,7 @@
 // 2a. Vendor style overrides.
 @import "vendor-extensions/bootstrap_and_overrides";
 @import "vendor-extensions/autocomplete";
+@import "vendor-extensions/bootstrap-tagsinput";
 
 // 0. Inspinia Bootstrap theme files.
 @import "themes/typography";
@@ -81,7 +82,6 @@
 @import "modals";
 
 // @import "jquery.ui.autocomplete.css";
-// @import "bootstrap-tagsinput";
 @import "vendor-extensions/acc-wizard";
 
 @import "devise";
