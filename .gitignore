@@ -17,6 +17,7 @@ Thumbs.db
 
 # DEPENDENCIES ========================================================
 node_modules/
+scss/vendor/
 
 
 # BUILD FILES =========================================================
@@ -25,3 +26,4 @@ node_modules/
 .ruby-version
 _site/
 bin/
+docs/fonts/
