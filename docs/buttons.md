@@ -104,6 +104,20 @@ You can also use the [badge](http://getbootstrap.com/components/#badges) compone
   <p>When there are no new or unread items, badges will simply collapse (via CSS’s <code>:empty</code> selector) provided no content exists within.</p>
 </div>
 
+## With icons
+
+{% example html %}
+<button class="btn btn-primary" type="button">
+  <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+  Button
+</button>
+
+<button class="btn btn-danger" type="button">
+  <i class="fa fa-ban" aria-hidden="true"></i>
+  Button
+</button>
+{% endexample %}
+
 ## Button groups
 
 Have a hankering for a series of buttons that are attached to one another? Wrap them in a `.btn-group` and the buttons will be rounded and spaced automatically.
