@@ -99,6 +99,27 @@ module.exports = function(grunt) {
           branch: 'gh-pages'
         }
       }
+    },
+
+    copy: {
+      main: {
+        files: [
+          // includes files within path
+          {
+            expand: true,
+            flatten: true,
+            src: [
+              'scss/vendor/font-awesome/fonts/fontawesome-webfont.eot',
+              'scss/vendor/font-awesome/fonts/fontawesome-webfont.svg',
+              'scss/vendor/font-awesome/fonts/fontawesome-webfont.ttf',
+              'scss/vendor/font-awesome/fonts/fontawesome-webfont.woff',
+              'scss/vendor/font-awesome/fonts/fontawesome-webfont.woff2'
+            ],
+            dest: 'docs/fonts/',
+            filter: 'isFile'
+          }
+        ]
+      }
     }
   });
 
@@ -109,9 +130,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-parker');
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Generate and format the CSS
-  grunt.registerTask('default', ['sass', 'jekyll:dist', 'postcss', 'parker']);
+  grunt.registerTask('default', ['sass', 'postcss', 'copy', 'jekyll:dist', 'parker']);
 
   // Publish to GitHub
   grunt.registerTask('publish', ['jekyll:dist', 'postcss:docs', 'buildcontrol:pages']);

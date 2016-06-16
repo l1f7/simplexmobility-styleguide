@@ -11,11 +11,12 @@
     "Gruntfile.js"
   ],
   "main": [
-    "scss/primer.scss"
+    "scss/carbon.scss"
   ],
   "dependencies": {
     "octicons": "*",
-    "bootstrap-sass": "^3.3.6"
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome": "fontawesome#^4.6.3"
   },
   "private": true
 }
