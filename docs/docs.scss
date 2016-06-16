@@ -188,6 +188,34 @@ body {
 }
 
 
+.c-docs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid $black-divider;
+  border-left-width: 5px;
+
+  &.c-docs-callout-info {
+    border-left-color: $brand-info;
+
+    h4 {
+      color: $brand-info;
+    }
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  p {
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
 
 // Make containers responsive
 // .container {

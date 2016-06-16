@@ -80,38 +80,29 @@ Make any button full-width by adding `.btn-block`. It adds `width: 100%;`, chang
 
 ## With counts
 
-You can easily append a count to a **small button**. Add the `.with-count` class to the `.btn-sm` and then add the `.social-count` after the button.
-
-**Be sure to clear the float added by the additional class.**
-
-{% example html %}
-<div class="clearfix">
-  <a class="btn btn-sm btn-with-count" href="#" role="button">
-    <span class="octicon octicon-eye"></span>
-    Watch
-  </a>
-  <a class="social-count" href="#">6</a>
-</div>
-{% endexample %}
-
-You can also use the [badge](../utilities/#counter) component within buttons:
+You can also use the [badge](http://getbootstrap.com/components/#badges) component within buttons:
 
 {% example html %}
 <button class="btn" type="button">
   Button
-  <span class="counter">12</span>
+  <span class="badge">12</span>
 </button>
 
 <button class="btn btn-primary" type="button">
   Button
-  <span class="counter">12</span>
+  <span class="badge">12</span>
 </button>
 
 <button class="btn btn-danger" type="button">
   Button
-  <span class="counter">12</span>
+  <span class="badge">12</span>
 </button>
 {% endexample %}
+
+<div class="c-docs-callout c-docs-callout-info">
+  <h4>Note about badges</h4>
+  <p>When there are no new or unread items, badges will simply collapse (via CSS’s <code>:empty</code> selector) provided no content exists within.</p>
+</div>
 
 ## Button groups
 
