@@ -190,6 +190,7 @@ body {
   margin: 20px 0;
   border: 1px solid $black-divider;
   border-left-width: 5px;
+  border-radius: 0.25rem;
 
   &.c-docs-callout-info {
     border-left-color: $brand-info;
@@ -444,6 +445,11 @@ body {
     margin-top: -1px;
     border: 1px solid #e5e5e5;
     border-radius: 0 0 .25rem .25rem;
+
+    pre {
+      border: 0;
+      border-radius: 0;
+    }
   }
 
   > p:last-child,
