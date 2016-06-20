@@ -1,0 +1,163 @@
+//
+// Bootstrap badge styles.
+//
+// These styles override the Bootstrap defaults.
+//
+//
+.badge {
+  padding: 4px 7px;
+
+  // Account for badges in navs
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    color: $badge-active-color;
+    background-color: $badge-active-bg;
+  }
+}
+
+
+//
+// Custom badges.
+//
+// @TODO Can these use variables or is there a reason these can't be replaced
+// by the standard `-info`, `-caution`, etc. classes?
+//
+.badge-u {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: #72c02c;
+  }
+}
+
+
+.badge-blue {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: #3498db;
+  }
+}
+
+
+.badge-red {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: #e74c3c;
+  }
+}
+
+
+.badge-green {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: #2ecc71;
+  }
+}
+
+
+.badge-sea {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: #1abc9c;
+  }
+}
+
+
+.badge-orange {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: #e67e22;
+  }
+}
+
+
+.badge-yellow {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: #f1c40f;
+  }
+}
+
+
+.badge-purple {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: #9b6bcc;
+  }
+}
+
+
+.badge-aqua {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: #27d7e7;
+  }
+}
+
+
+.badge-brown {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: #9c8061;
+  }
+}
+
+
+.badge-dark-blue {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: #4765a0;
+  }
+}
+
+
+.badge-light-green {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: #79d5b3;
+  }
+}
+
+
+.badge-light {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    color: #777;
+    background-color: #ecf0f1;
+  }
+}
+
+
+.badge-dark {
+
+  &,
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: #555;
+  }
+}

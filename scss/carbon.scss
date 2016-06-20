@@ -35,6 +35,8 @@
 // 2a. Vendor style overrides.
 @import "vendor-extensions/bootstrap_and_overrides";
 @import "vendor-extensions/bootstrap-buttons";
+@import "vendor-extensions/bootstrap-labels";
+@import "vendor-extensions/bootstrap-badges";
 
 @import "vendor-extensions/autocomplete";
 @import "vendor-extensions/bootstrap-tagsinput";
@@ -58,7 +60,6 @@
 // 0a. Initial styles.
 @import "margins";
 @import "panels";
-@import "labels_and_badges";
 @import "rounded";
 
 // @import "select2";

@@ -114,6 +114,43 @@ $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;
 
 
+// Badges.
+$badge-color:                 #fff !default;
+//** Linked badge text color on hover
+$badge-link-hover-color:      #fff !default;
+$badge-bg:                    $grey-600;
+
+//** Badge text color in active nav link
+$badge-active-color:          $white;
+//** Badge background color in active nav link
+$badge-active-bg:             $grey-600;
+
+$badge-font-weight:           400;
+$badge-line-height:           1 !default;
+$badge-border-radius:         10px !default;
+
+
+// Labels.
+//** Default label background color
+$label-default-bg:            $gray-light !default;
+//** Primary label background color
+$label-primary-bg:            $brand-primary !default;
+//** Success label background color
+$label-success-bg:            $brand-success !default;
+//** Info label background color
+$label-info-bg:               $brand-info !default;
+//** Warning label background color
+$label-warning-bg:            $brand-warning !default;
+//** Danger label background color
+$label-danger-bg:             $brand-danger !default;
+
+//** Default label text color
+$label-color:                 $white;
+//** Default text color of a linked label
+$label-link-hover-color:      $white;
+
+
+
 
 
 
