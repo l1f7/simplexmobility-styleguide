@@ -3,17 +3,14 @@
 # only main files contain this front matter, not partials.
 ---
 
-/*
- * Primer documentation styles
- * http://primercss.io
- *
- * Released under MIT license. Copyright 2015 GitHub, Inc.
+/**
+ * Carbon documentation styles
+ * https://l1f7.github.io/simplexmobility-styleguide/
  */
 
 //
-// Import Primer itself
+// Import Carbon itself
 //
-
 @import "../scss/carbon";
 @import "bower_components/octicons/octicons/octicons.css";
 @import "css/markdown";
@@ -468,14 +465,21 @@ body {
     padding-left: $grid-gutter;
     padding-right: $grid-gutter;
   }
-  .columns + .columns {
-    margin-top: 10px;
+  .row {
+    + .row {
+      margin-top: 15px;
+    }
   }
-  .column {
+  [class^=col-] {
     padding: $grid-gutter;
     font-family: $mono-font;
-    background-color: lighten($green, 40%);
-    border: 1px solid lighten($green, 30%);
+    background-color: rgba($green, 0.4);
+    border: 1px solid rgba($green, 0.3);
+    > .row {
+      margin-top: $grid-gutter;
+      margin-right: -$grid-gutter;
+      margin-left: -$grid-gutter;
+    }
   }
 
   // Override Markdown styles to restore values from `_type.scss`

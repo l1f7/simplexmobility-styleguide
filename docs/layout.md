@@ -3,9 +3,7 @@ layout: page
 title: Layout
 ---
 
-Primer's layout includes basic page containers and a single-tiered, fraction-based grid system. That sounds more complicated than it really is though—it's just containers, rows, and columns.
-
-You can find all the below styles in `_layout.scss`.
+Carbon’s layout uses Bootstrap’s grid system—a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.
 
 ## Contents
 
@@ -22,71 +20,105 @@ Center your page's contents with a `.container`.
 </div>
 {% endhighlight %}
 
-The container applies `width: 980px;` and uses horizontal `margin`s to center it.
+Note that, due to `padding` and more, neither container is nestable.
 
 ## Grid
 
 ### How it works
 
-The grid is pretty standard—you create rows with `.columns` and individual columns with a column class and fraction class. Here's how it works:
+The grid is pretty standard—you create rows with `.row` and individual columns with a column class and fraction class. Here's how it works:
 
-- Add a `.container` to encapsulate everything and provide ample horizontal gutter space.
-- Create your outer row to clear the floated columns with `<div class="columns">`.
-- Add your columns with individual `<div class="column">`s.
-- Add your fractional width classes to set the width of the columns (e.g., `.one-fourth`).
+- Rows must be placed within a `.container` (fixed-width) or `.container-fluid` (full-width) for proper alignment and padding.
+- Use rows to create horizontal groups of columns.
+- Content should be placed within columns, and _only columns_ may be immediate children of rows.
+- Predefined grid classes like `.row` and `.col-xs-4` are available for quickly making grid layouts.
 
-### Demo
+<div class="c-docs-callout c-docs-callout-info">
+  <h4>Separation of concerns</h4>
+  <p>Grid components work solo. Avoid confusion and potential breakage by not adding row or column classes to other components or elements.</p>
+</div>
 
-In practice, your columns will look like the example below.
+### Demo: Stacked-to-horizontal
+
+Using a single set of `.col-md-*` grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any `.row`.
 
 {% example html %}
 <div class="container">
-  <div class="columns">
-    <div class="one-fifth column">
-      .one-fifth
-    </div>
-    <div class="four-fifths column">
-      .four-fifths
-    </div>
+  <div class="row">
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
   </div>
-
-  <div class="columns">
-    <div class="one-fourth column">
-      .one-fourth
-    </div>
-    <div class="three-fourths column">
-      .three-fourths
-    </div>
+  <div class="row">
+    <div class="col-md-8">.col-md-8</div>
+    <div class="col-md-4">.col-md-4</div>
   </div>
-
-  <div class="columns">
-    <div class="one-third column">
-      .one-third
-    </div>
-    <div class="two-thirds column">
-      .two-thirds
-    </div>
+  <div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
   </div>
-
-  <div class="columns">
-    <div class="one-half column">
-      .one-half
-    </div>
-    <div class="one-half column">
-      .one-half
-    </div>
+  <div class="row">
+    <div class="col-md-6">.col-md-6</div>
+    <div class="col-md-6">.col-md-6</div>
   </div>
 </div>
 {% endexample %}
 
-### Centered
+### Demo: Mobile and desktop
 
-Columns can be [centered](/utilities/#centering-content) by adding `.centered` to the `.column` class.
+Don’t want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding `.col-xs-*` `.col-md-*` to your columns. See the example below for a better idea of how it all works.
 
 {% example html %}
-<div class="columns">
-  <div class="one-half column centered">
-    .one-half
+<div class="container">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+  </div>
+
+  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+  <div class="row">
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+  </div>
+
+  <!-- Columns are always 50% wide, on mobile and desktop -->
+  <div class="row">
+    <div class="col-xs-6">.col-xs-6</div>
+    <div class="col-xs-6">.col-xs-6</div>
+  </div>
+</div>
+{% endexample %}
+
+### Nesting columns
+
+To nest your content with the default grid, **add a new `.row`** and set of `.col-sm-*` columns within an existing `.col-sm-*` column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).
+
+{% example html %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      Level 1: .col-sm-9
+      <div class="row">
+        <div class="col-xs-8 col-sm-6">
+          Level 2: .col-xs-8 .col-sm-6
+        </div>
+        <div class="col-xs-4 col-sm-6">
+          Level 2: .col-xs-4 .col-sm-6
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {% endexample %}
