@@ -5,10 +5,12 @@ title: Buttons
 
 Buttons are used for **actions**, like in forms, while textual hyperlinks are used for **destinations**, or moving from one page to another.
 
+
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
+
 
 ## Default buttons
 
@@ -17,38 +19,67 @@ Use the standard—yet classy—`.btn` for form actions and primary page actions
 When using a `<button>` element, **always specify a `type`**. When using a `<a>` element, **always add `role="button"` for accessibility**.
 
 {% example html %}
-<button class="btn" type="button">Button button</button>
-<a class="btn" href="#" role="button">Link button</a>
+<a class="btn btn-default" href="#" role="button">Link</a>
+<button class="btn btn-default" type="submit">Button</button>
+<input class="btn btn-default" type="button" value="Input">
+<input class="btn btn-default" type="submit" value="Submit">
 {% endexample %}
 
-You can find them in two sizes: the default `.btn` and the smaller `.btn-sm`.
+
+## Variants
 
 {% example html %}
-<button class="btn" type="button">Button</button>
-<button class="btn btn-sm" type="button">Small button</button>
+<button type="button" class="btn btn-default">Default</button>
+
+<button type="button" class="btn btn-primary">Primary</button>
+
+<button type="button" class="btn btn-success">Success</button>
+
+<button type="button" class="btn btn-info">Info</button>
+
+<button type="button" class="btn btn-warning">Warning</button>
+
+<button type="button" class="btn btn-danger">Danger</button>
+
+<button type="button" class="btn btn-link">Link</button>
 {% endexample %}
 
-## Primary
+<div class="c-docs-callout c-docs-callout-info">
+  <h4>Conveying meaning to assistive technologies</h4>
+  <p>Using color to add meaning to a button only provides a visual indication, which will not be conveyed to users of assistive technologies—such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text of the button), or is included through alternative means, such as additional text hidden with the <code>.sr-only</code> class.</p>
+</div>
 
+### Primary
 Primary buttons are used to indicate the *primary* action on a page. When you need your buttons to stand out, use `.btn.btn-primary`. You can use it with both button sizes—just add `.btn-primary`.
 
 Primary buttons should be selected carefully, with no more than one per section (ideally only one per page, although the primary page action can also be indicated by button size).
 
-The colour of primary buttons can be changed in the Branding settings.
-
-{% example html %}
-<button class="btn btn-primary" type="button">Primary button</button>
-<button class="btn btn-sm btn-primary" type="button">Small primary button</button>
-{% endexample %}
-
-## Danger
-
+### Danger
 Danger buttons are red. They help reiterate that the intended action is important or potentially dangerous (e.g., deleting a repo or transferring ownership). Similar to the primary buttons, just add `.btn-danger`.
 
+
+## Sizes
+
+You can find them in two sizes: the default `.btn` and the larger `.btn-lg`.
+
 {% example html %}
-<button class="btn btn-danger" type="button">Danger button</button>
-<button class="btn btn-sm btn-danger" type="button">Small danger button</button>
+<p>
+  <button type="button" class="btn btn-primary">Normal button</button>
+  <button type="button" class="btn btn-default">Normal button</button>
+</p>
+<p>
+  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+  <button type="button" class="btn btn-default btn-lg">Large button</button>
+</p>
 {% endexample %}
+
+Create block-level buttons—those that span the full width of a parent—by adding `.btn-block`.
+
+{% example html %}
+<button type="button" class="btn btn-primary btn-block">Block level button</button>
+<button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+{% endexample %}
+
 
 ## Disabled state
 
@@ -69,21 +100,12 @@ Disable `<button>` elements with the boolean `disabled` attribute and `<a>` elem
 <a class="btn btn-danger disabled" href="#" role="button">Disabled button</a>
 {% endexample %}
 
-## Block buttons
-
-Make any button full-width by adding `.btn-block`. It adds `width: 100%;`, changes the `display` from `inline-block` to `block`, and centers the button text.
-
-{% example html %}
-<p><button class="btn btn-block" type="button">Block button</button></p>
-<p><button class="btn btn-sm btn-block" type="button">Small block button</button></p>
-{% endexample %}
-
 ## With counts
 
 You can also use the [badge](http://getbootstrap.com/components/#badges) component within buttons:
 
 {% example html %}
-<button class="btn" type="button">
+<button class="btn btn-default" type="button">
   Button
   <span class="badge">12</span>
 </button>
@@ -118,6 +140,29 @@ You can also use the [badge](http://getbootstrap.com/components/#badges) compone
 </button>
 {% endexample %}
 
+
+## Primary Action buttons
+
+In order to clearly indicate the primary action for the user, use this button style (in conjunction with an appropriate icon from FontAwesome). Use this style sparingly, once per section, ideally only once per page/screen.
+
+{% example html %}
+<button class="btn btn-default btn-action" type="button">
+  Button
+  <span class="btn-icon" aria-hidden="true">
+    <i class="fa fa-fw fa-arrow-right"></i>
+  </span>
+</button>
+
+<button class="btn btn-primary btn-action" type="button">
+  Button
+  <span class="btn-icon" aria-hidden="true">
+    <i class="fa fa-fw fa-refresh"></i>
+  </span>
+</button>
+{% endexample %}
+
+
+<!--
 ## Button groups
 
 Have a hankering for a series of buttons that are attached to one another? Wrap them in a `.btn-group` and the buttons will be rounded and spaced automatically.
@@ -136,9 +181,9 @@ Have a hankering for a series of buttons that are attached to one another? Wrap 
 </div>
 
 <div class="btn-group">
-  <button class="btn btn-sm" type="button">Button</button>
-  <button class="btn btn-sm" type="button">Button</button>
-  <button class="btn btn-sm" type="button">Button</button>
+  <button class="btn btn-lg" type="button">Button</button>
+  <button class="btn btn-lg" type="button">Button</button>
+  <button class="btn btn-lg" type="button">Button</button>
 </div>
 {% endexample %}
 
@@ -153,6 +198,9 @@ Add `.btn-group-form` to `<form>`s within `.btn-group`s for proper spacing and r
   <button class="btn" type="button">Button</button>
 </div>
 {% endexample %}
+-->
+
+
 <!--
 ## Hidden text button
 
