@@ -124,6 +124,24 @@ module.exports = function(grunt) {
             filter: 'isFile'
           }
         ]
+      },
+      dist: {
+        files: [
+          // includes files within path
+          {
+            expand: true,
+            flatten: true,
+            src: [
+              'scss/vendor/font-awesome/fonts/fontawesome-webfont.eot',
+              'scss/vendor/font-awesome/fonts/fontawesome-webfont.svg',
+              'scss/vendor/font-awesome/fonts/fontawesome-webfont.ttf',
+              'scss/vendor/font-awesome/fonts/fontawesome-webfont.woff',
+              'scss/vendor/font-awesome/fonts/fontawesome-webfont.woff2'
+            ],
+            dest: '_site/fonts/',
+            filter: 'isFile'
+          }
+        ]
       }
     }
   });
@@ -143,5 +161,5 @@ module.exports = function(grunt) {
   grunt.registerTask('serve', ['sass', 'postcss', 'copy', 'jekyll:serve']);
 
   // Publish to GitHub
-  grunt.registerTask('publish', ['jekyll:dist', 'postcss:docs', 'buildcontrol:pages']);
+  grunt.registerTask('publish', ['copy:dist', 'jekyll:dist', 'postcss:docs', 'buildcontrol:pages']);
 };
