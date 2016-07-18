@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tooltips
+title: Tables
 ---
 
 Add tooltips built entirely in CSS to nearly any element. Just add a few classes and an `aria-label` attribute.

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blankslate
+title: Charts
 ---
 
 Blankslates are for when there is a lack of content within a page or section. Use them as placeholders to tell users why something isn't there. Be sure to provide an action to add content as well.
