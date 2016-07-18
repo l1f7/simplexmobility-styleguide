@@ -5,6 +5,42 @@
 // styles, see `vendor-extensions/_bootstrap-buttons.scss`.
 //
 
+//
+// Action button.
+//
+.btn-action {
+  padding-right: 0;
+  border-radius: 2em;
+}
+
+.btn-icon {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  margin: 0 0.4375em 0 0;
+  vertical-align: middle;
+  border: solid 1px;
+  border-radius: 50%;
+
+  .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 17px;
+    height: 12px;
+    margin-top: -6px;
+    margin-left: -0.642855em;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+
+
+
 // quick tools dropdown
 .f-dropdown:before, .f-dropdown:after {
   left: 18px;
