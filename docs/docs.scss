@@ -11,6 +11,8 @@
 //
 // Import Carbon itself
 //
+$fa-font-path: "fonts";
+
 @import "../scss/carbon";
 @import "bower_components/octicons/octicons/octicons.css";
 @import "css/markdown";
