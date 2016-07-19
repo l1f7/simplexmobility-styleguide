@@ -5,14 +5,12 @@ title: Forms
 
 Style individual form controls and utilize common layouts.
 
-<div class="flash">
-  <strong>Heads up!</strong> Forms need some reworking to clean up the specificity and required markup. We'll get to that soon!
-</div>
 
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
+
 
 ## Overview
 
@@ -21,71 +19,43 @@ Style individual form controls and utilize common layouts.
 - Always declare a `type` on your `<button>`s.
 - Form layouts rely on form groups.
 
+
 ## Example form
 
 Form controls in Primer currently have no basic layout specified (this is by design). You'll need to use `<fieldset>`s, `<div>`s, or other elements and styles to rearrange them.
 
 {% example html %}
 <form>
-  <label for="name">Name</label>
-  <input class="form-control" type="text" id="name">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input class="form-control" id="name" type="text" aria-describedby="helpBlock">
+    <span class="help-block" id="helpBlock">First name &amp; Last name</span>
+  </div>
 
-  <label for="email">Email address</label>
-  <input class="form-control" type="email" id="email">
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input class="form-control" type="email" id="email">
+  </div>
 
-  <label>
-    <input type="checkbox"> Remember me
-  </label>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+  </div>
 
-  <label>
-    <input type="radio" id="herp" name="herpderp" checked> Herp
-  </label>
-  <label>
-    <input type="radio" id="derp" name="herpderp"> Derp
-  </label>
+  <div class="form-group">
+    <label class="radio-inline">
+      <input type="radio" id="herp" name="herpderp" checked> Herp
+    </label>
+    <label class="radio-inline">
+      <input type="radio" id="derp" name="herpderp"> Derp
+    </label>
+  </div>
 
-  <button class="btn" type="submit">Submit</button>
+  <button class="btn btn-default" type="submit">Submit</button>
 </form>
 {% endexample %}
 
-## Form contrast
-
-Textual form controls have a white background by default. You can change this to a light gray with `.input-contrast`.
-
-{% example html %}
-<form>
-  <input class="form-control" type="text" placeholder="Default input">
-  <input class="form-control input-contrast" type="text" placeholder="Input with contrast">
-</form>
-{% endexample %}
-
-## Sizing
-
-Make inputs smaller, larger, or full-width with an additional class.
-
-### Small
-
-{% example html %}
-<form>
-  <input class="form-control input-sm" type="text" placeholder="Small input">
-</form>
-{% endexample %}
-
-### Large
-
-{% example html %}
-<form>
-  <input class="form-control input-lg" type="text" placeholder="Large input">
-</form>
-{% endexample %}
-
-### Block
-
-{% example html %}
-<form>
-  <input class="form-control input-block" type="text" placeholder="Full-width input">
-</form>
-{% endexample %}
 
 ## Selects
 
@@ -93,7 +63,7 @@ Primer adds light `height` and `vertical-align` styles to `<select>`s for all br
 
 {% example html %}
 <form>
-  <select class="form-select">
+  <select class="form-control">
     <option>Choose an option</option>
     <option>Git</option>
     <option>Subversion</option>
@@ -105,31 +75,6 @@ Primer adds light `height` and `vertical-align` styles to `<select>`s for all br
 </form>
 {% endexample %}
 
-### Small
-
-Use the `.select-sm` class to resize both default and custom `<select>`s to match the size of [our small buttons](/buttons/#default-buttons).
-
-{% example html %}
-<select class="form-select select-sm">
-  <option>Choose an option</option>
-  <option>Git</option>
-  <option>Subversion</option>
-  <option>Social Coding</option>
-  <option>Beets</option>
-  <option>Bears</option>
-  <option>Battlestar Galactica</option>
-</select>
-
-<select class="form-select select-sm">
-  <option>Choose an option</option>
-  <option>Git</option>
-  <option>Subversion</option>
-  <option>Social Coding</option>
-  <option>Beets</option>
-  <option>Bears</option>
-  <option>Battlestar Galactica</option>
-</select>
-{% endexample %}
 
 ## Form groups
 
@@ -143,7 +88,7 @@ Use the `.select-sm` class to resize both default and custom `<select>`s to matc
   <dl class="form-group">
     <dt><label>Example Select</label></dt>
     <dd>
-      <select class="form-select">
+      <select class="form-control">
         <option>Choose an option</option>
         <option>Git</option>
         <option>Subversion</option>
@@ -164,6 +109,30 @@ Use the `.select-sm` class to resize both default and custom `<select>`s to matc
 </form>
 {% endexample %}
 
+{% example html %}
+<form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+      <div class="input-group-addon">.00</div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-lg btn-primary">Transfer cash</button>
+</form>
+
+<form>
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search for...">
+    <span class="input-group-btn">
+      <button class="btn btn-secondary" type="button">Go!</button>
+    </span>
+  </div>
+</form>
+{% endexample %}
+
+
 ## Form group validation
 
 Convey errors and warnings for form groups. Add the appropriate class—either `.errored` or `.warn`—to the `<dl class="form-group">` to start. Then, house your error messaging in an additional `<dd>` with either `.error` or `.warning`.
@@ -183,6 +152,7 @@ Convey errors and warnings for form groups. Add the appropriate class—either `
   </dl>
 </form>
 {% endexample %}
+
 
 ## Checkboxes and radios
 
@@ -215,6 +185,7 @@ You may also add emphasis to the label:
 </form>
 {% endexample %}
 
+
 ## Input group
 
 Attached an input and button to one another.
@@ -231,6 +202,7 @@ Attached an input and button to one another.
   </div>
 </form>
 {% endexample %}
+
 
 ## Form actions
 

@@ -92,6 +92,8 @@ $font-family-monospace:  Menlo, Monaco, Consolas, "Courier New", monospace !defa
 $font-family-base:       $font-family-sans-serif;
 
 $font-size-base:         14px !default;
+$font-size-lg:           ceil(($font-size-base * 1.25));
+$font-size-sm:           ceil(($font-size-base * 0.875));
 $font-size-large:        ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:        ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -112,6 +114,11 @@ $headings-font-family:   inherit !default;
 $headings-font-weight:   500 !default;
 $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;
+
+
+// Components.
+$line-height-lg:         (4 / 3) !default;
+$line-height-sm:         1.5 !default;
 
 
 // Badges.
@@ -187,6 +194,51 @@ $btn-border-radius-base:         3px;
 $btn-border-radius-large:        $btn-border-radius-base;
 $btn-border-radius-small:        $btn-border-radius-base;
 
+
+// Forms.
+$input-padding-x:                10.5px;
+$input-padding-y:                14px;
+$input-line-height:              1.25;
+
+$input-bg:                       $grey-100;
+$input-bg-disabled:              $gray-lighter;
+
+$input-color:                    $gray;
+$input-border:                   $grey-300;
+
+$input-border-radius:            3px;
+$input-border-radius-large:      $input-border-radius;
+$input-border-radius-small:      $input-border-radius;
+
+$input-bg-focus:                 $white;
+$input-border-focus:             $brand-primary;
+
+$input-color-placeholder:        #999;
+
+$input-padding-x-sm:             7px;
+$input-padding-y-sm:             3.5px;
+
+$input-padding-x-lg:             21px;
+$input-padding-y-lg:             10.5px;
+
+// Bootstrap v4 vars.
+$input-height:                   floor(((16px * 1.4) + ($input-padding-y * 2)));
+$input-height-lg:                (($font-size-lg * $line-height-lg) + ($input-padding-y-lg * 2));
+$input-height-sm:                (($font-size-sm * $line-height-sm) + ($input-padding-y-sm * 2));
+
+$input-height-base:              $input-height;
+$input-height-large:             $input-height-lg;
+$input-height-small:             $input-height-sm;
+
+$form-group-margin-bottom:       15px;
+
+$legend-color:                   $gray-dark;
+$legend-border-color:            #e5e5e5;
+
+$input-group-addon-bg:           $gray-lighter;
+$input-group-addon-border-color: $input-border;
+
+$cursor-disabled:                not-allowed;
 
 
 

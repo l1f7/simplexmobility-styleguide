@@ -1,0 +1,20 @@
+//
+// Bootstrap form styles.
+//
+// These styles override the Bootstrap defaults.
+//
+
+label {
+  font-weight: normal;
+}
+
+
+.form-control {
+  padding: 0.875em;
+  font-size: 16px;
+  transition: border-color 150ms ease-in-out, box-shadow 150ms ease-in-out, background-color 150ms ease-in-out;
+
+  &:focus {
+    background-color: $input-bg-focus;
+  }
+}
