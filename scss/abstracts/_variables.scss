@@ -73,8 +73,8 @@ $gray-lighter:  $grey-200;
 $brand-primary: $brand-blue;
 $brand-success: $brand-green;
 $brand-info:    $brand-blue;
-$brand-warning: $brand-yellow;
-$brand-danger:  $brand-red;
+$brand-warning: #e8c010;
+$brand-danger:  #eb4e5d;
 
 
 // Scaffolding.
@@ -239,6 +239,28 @@ $input-group-addon-bg:           $gray-lighter;
 $input-group-addon-border-color: $input-border;
 
 $cursor-disabled:                not-allowed;
+
+
+// Alerts.
+$alert-padding:               15px;
+$alert-border-radius:         3px;
+$alert-link-font-weight:      bold;
+
+$alert-success-bg:            $brand-success;
+$alert-success-text:          $white;
+$alert-success-border:        $brand-success;
+
+$alert-info-bg:               $brand-info;
+$alert-info-text:             $white;
+$alert-info-border:           $brand-info;
+
+$alert-warning-bg:            $brand-warning;
+$alert-warning-text:          $white;
+$alert-warning-border:        $brand-warning;
+
+$alert-danger-bg:             $brand-danger;
+$alert-danger-text:           $white;
+$alert-danger-border:         $brand-danger;
 
 
 

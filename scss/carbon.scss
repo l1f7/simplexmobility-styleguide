@@ -34,10 +34,11 @@
 
 // 2a. Vendor style overrides.
 @import "vendor-extensions/bootstrap_and_overrides";
+@import "vendor-extensions/bootstrap-forms";
 @import "vendor-extensions/bootstrap-buttons";
 @import "vendor-extensions/bootstrap-labels";
 @import "vendor-extensions/bootstrap-badges";
-@import "vendor-extensions/bootstrap-forms";
+@import "vendor-extensions/bootstrap-alerts";
 
 @import "vendor-extensions/autocomplete";
 @import "vendor-extensions/bootstrap-tagsinput";

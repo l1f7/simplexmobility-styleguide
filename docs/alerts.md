@@ -3,76 +3,69 @@ layout: page
 title: Alerts
 ---
 
-Flash messages, or alerts, inform users of successful or pending actions. Use them sparingly. Don't show more than one at a time.
+Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. Use them sparingly&mdash;don't show more than one at a time.
+
 
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Default
 
-Flash messages start off looking decently neutral—they're just light blue rounded rectangles.
+## Examples
+
+Wrap any text and an optional dismiss button in `.alert` and one of the four contextual classes (eg, `.alert-success`) for basic alert messages.
 
 {% example html %}
-<div class="flash">
-  Flash message goes here.
+<div class="alert alert-success" role="alert">
+  <h4><i class="fa fa-check" aria-hidden="true"></i> Success Message Title</h4>
+</div>
+<div class="alert alert-info" role="alert">
+  <h4><i class="fa fa-info-circle" aria-hidden="true"></i> Info Message Title</h4>
+</div>
+<div class="alert alert-warning" role="alert">
+  <h4><i class="fa fa-warning" aria-hidden="true"></i> Warning Message Title</h4>
+</div>
+<div class="alert alert-danger" role="alert">
+  <h4><i class="fa fa-times" aria-hidden="true"></i> Error Message Title</h4>
 </div>
 {% endexample %}
 
-You can put multiple paragraphs of text in a flash message—the last paragraph's bottom `margin` will be automatically override.
+<div class="c-docs-callout c-docs-callout-info">
+  <h4>No default class</h4>
+  <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.</p>
+</div>
+
+If you need to be more verbose in your messaging, just add a paragraph after the heading. Use the `.alert-link` utility class to quickly provide matching colored links within any alert.
 
 {% example html %}
-<div class="flash">
-  <p>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.</p>
-  <p>And this is another paragraph.</p>
+<div class="alert alert-success" role="alert">
+  <h4><i class="fa fa-check" aria-hidden="true"></i> Success Message Title</h4>
+  <p>This is an example of a success message, it can be short or long, and <a class="alert-link" href="#">contain links</a>.</p>
+</div>
+<div class="alert alert-info" role="alert">
+  <h4><i class="fa fa-info-circle" aria-hidden="true"></i> Info Message Title</h4>
+  <p>This is an example of a info message, it can be short or long, and <a class="alert-link" href="#">contain links</a>.</p>
+</div>
+<div class="alert alert-warning" role="alert">
+  <h4><i class="fa fa-warning" aria-hidden="true"></i> Warning Message Title</h4>
+  <p>This is an example of a warning message, it can be short or long, and <a class="alert-link" href="#">contain links</a>.</p>
+</div>
+<div class="alert alert-danger" role="alert">
+  <h4><i class="fa fa-times" aria-hidden="true"></i> Error Message Title</h4>
+  <p>This is an example of a danger message, it can be short or long, and <a class="alert-link" href="#">contain links</a>.</p>
 </div>
 {% endexample %}
 
-Should the need arise, you can quickly space out your flash message from surrounding content with a `.flash-messages` wrapper. *Note the extra top and bottom margin in the example below.*
+
+## Dismissable
+
+Build on any alert by adding an optional `.alert-dismissible` and close button.
 
 {% example html %}
-<div class="flash-messages">
-  <div class="flash">
-    Flash message goes here.
-  </div>
-</div>
-{% endexample %}
-
-## Variations
-
-Add `.flash-warn` or `.flash-error` to the flash message to make it yellow or red, respectively.
-
-{% example html %}
-<div class="flash flash-warn">
-  Flash message goes here.
-</div>
-{% endexample %}
-
-{% example html %}
-<div class="flash flash-error">
-  Flash message goes here.
-</div>
-{% endexample %}
-
-## With icon
-
-Add an icon to the left of the flash message to give it some funky fresh attention. Just add `.flash-with-icon` and your Octicon.
-
-{% example html %}
-<div class="flash flash-with-icon">
-  <span class="octicon octicon-alert"></span>
-  Flash message with an icon goes here.
-</div>
-{% endexample %}
-
-## Dismiss
-
-Add a JavaScript enabled (via Crema) dismiss (close) icon on the right of any flash message.
-
-{% example html %}
-<div class="flash">
-  <span class="octicon octicon-x flash-close js-flash-close"></span>
-  Dismissable flash message goes here.
+<div class="alert alert-info alert-dismissable" role="alert">
+  <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <h4><i class="fa fa-check" aria-hidden="true"></i> Success Message Title</h4>
+  <p>This is an example of a info message, it can be short or long, and <a class="alert-link" href="#">contain links</a>.</p>
 </div>
 {% endexample %}

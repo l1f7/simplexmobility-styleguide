@@ -1,0 +1,32 @@
+.alert {
+
+  > p {
+    font-size: 12px;
+  }
+}
+
+.alert-link {
+  transition: color 150ms ease-in-out;
+  will-change: color;
+}
+
+$alert-variants: (
+  success: $alert-success-text,
+  info: $alert-info-text,
+  warning: $alert-warning-text,
+  danger: $alert-danger-text
+);
+
+@each $status, $color in $alert-variants {
+  .alert-#{$status} {
+
+    .alert-link {
+      color: rgba($color, 0.7);
+
+      &:hover,
+      &:focus {
+        color: rgba($color, 1);
+      }
+    }
+  }
+}
