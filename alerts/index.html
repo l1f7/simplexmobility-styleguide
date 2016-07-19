@@ -158,95 +158,98 @@
         Alerts
       </h1>
       <div class="markdown-body">
-        <p>Flash messages, or alerts, inform users of successful or pending actions. Use them sparingly. Don’t show more than one at a time.</p>
+        <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. Use them sparingly—don’t show more than one at a time.</p>
 
 <h2 id="contents">Contents</h2>
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#default" id="markdown-toc-default">Default</a></li>
-  <li><a href="#variations" id="markdown-toc-variations">Variations</a></li>
-  <li><a href="#with-icon" id="markdown-toc-with-icon">With icon</a></li>
-  <li><a href="#dismiss" id="markdown-toc-dismiss">Dismiss</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#dismissable" id="markdown-toc-dismissable">Dismissable</a></li>
 </ul>
 
-<h2 id="default">Default</h2>
+<h2 id="examples">Examples</h2>
 
-<p>Flash messages start off looking decently neutral—they’re just light blue rounded rectangles.</p>
+<p>Wrap any text and an optional dismiss button in <code class="highlighter-rouge">.alert</code> and one of the four contextual classes (eg, <code class="highlighter-rouge">.alert-success</code>) for basic alert messages.</p>
 
-<div class="docs-example clearfix"><div class="flash">
-  Flash message goes here.
+<div class="docs-example clearfix"><div class="alert alert-success" role="alert">
+  <h4><i class="fa fa-check" aria-hidden="true"></i> Success Message Title</h4>
+</div>
+<div class="alert alert-info" role="alert">
+  <h4><i class="fa fa-info-circle" aria-hidden="true"></i> Info Message Title</h4>
+</div>
+<div class="alert alert-warning" role="alert">
+  <h4><i class="fa fa-warning" aria-hidden="true"></i> Warning Message Title</h4>
+</div>
+<div class="alert alert-danger" role="alert">
+  <h4><i class="fa fa-times" aria-hidden="true"></i> Error Message Title</h4>
 </div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flash"</span><span class="nt">&gt;</span>
-  Flash message goes here.
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-check"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Success Message Title<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-info-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Info Message Title<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-warning"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Warning Message Title<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Error Message Title<span class="nt">&lt;/h4&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<p>You can put multiple paragraphs of text in a flash message—the last paragraph’s bottom <code class="highlighter-rouge">margin</code> will be automatically override.</p>
+<div class="c-docs-callout c-docs-callout-info">
+  <h4>No default class</h4>
+  <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.</p>
+</div>
 
-<div class="docs-example clearfix"><div class="flash">
-  <p>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.</p>
-  <p>And this is another paragraph.</p>
+<p>If you need to be more verbose in your messaging, just add a paragraph after the heading. Use the <code class="highlighter-rouge">.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
+
+<div class="docs-example clearfix"><div class="alert alert-success" role="alert">
+  <h4><i class="fa fa-check" aria-hidden="true"></i> Success Message Title</h4>
+  <p>This is an example of a success message, it can be short or long, and <a class="alert-link" href="#">contain links</a>.</p>
+</div>
+<div class="alert alert-info" role="alert">
+  <h4><i class="fa fa-info-circle" aria-hidden="true"></i> Info Message Title</h4>
+  <p>This is an example of a info message, it can be short or long, and <a class="alert-link" href="#">contain links</a>.</p>
+</div>
+<div class="alert alert-warning" role="alert">
+  <h4><i class="fa fa-warning" aria-hidden="true"></i> Warning Message Title</h4>
+  <p>This is an example of a warning message, it can be short or long, and <a class="alert-link" href="#">contain links</a>.</p>
+</div>
+<div class="alert alert-danger" role="alert">
+  <h4><i class="fa fa-times" aria-hidden="true"></i> Error Message Title</h4>
+  <p>This is an example of a danger message, it can be short or long, and <a class="alert-link" href="#">contain links</a>.</p>
 </div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flash"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p&gt;</span>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;p&gt;</span>And this is another paragraph.<span class="nt">&lt;/p&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-check"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Success Message Title<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is an example of a success message, it can be short or long, and <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"alert-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>contain links<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-info-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Info Message Title<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is an example of a info message, it can be short or long, and <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"alert-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>contain links<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-warning"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Warning Message Title<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is an example of a warning message, it can be short or long, and <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"alert-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>contain links<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Error Message Title<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is an example of a danger message, it can be short or long, and <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"alert-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>contain links<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<p>Should the need arise, you can quickly space out your flash message from surrounding content with a <code class="highlighter-rouge">.flash-messages</code> wrapper. <em>Note the extra top and bottom margin in the example below.</em></p>
+<h2 id="dismissable">Dismissable</h2>
 
-<div class="docs-example clearfix"><div class="flash-messages">
-  <div class="flash">
-    Flash message goes here.
-  </div>
+<p>Build on any alert by adding an optional <code class="highlighter-rouge">.alert-dismissible</code> and close button.</p>
+
+<div class="docs-example clearfix"><div class="alert alert-info alert-dismissable" role="alert">
+  <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <h4><i class="fa fa-check" aria-hidden="true"></i> Success Message Title</h4>
+  <p>This is an example of a info message, it can be short or long, and <a class="alert-link" href="#">contain links</a>.</p>
 </div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flash-messages"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flash"</span><span class="nt">&gt;</span>
-    Flash message goes here.
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-<h2 id="variations">Variations</h2>
-
-<p>Add <code class="highlighter-rouge">.flash-warn</code> or <code class="highlighter-rouge">.flash-error</code> to the flash message to make it yellow or red, respectively.</p>
-
-<div class="docs-example clearfix"><div class="flash flash-warn">
-  Flash message goes here.
-</div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flash flash-warn"</span><span class="nt">&gt;</span>
-  Flash message goes here.
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-<div class="docs-example clearfix"><div class="flash flash-error">
-  Flash message goes here.
-</div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flash flash-error"</span><span class="nt">&gt;</span>
-  Flash message goes here.
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-<h2 id="with-icon">With icon</h2>
-
-<p>Add an icon to the left of the flash message to give it some funky fresh attention. Just add <code class="highlighter-rouge">.flash-with-icon</code> and your Octicon.</p>
-
-<div class="docs-example clearfix"><div class="flash flash-with-icon">
-  <span class="octicon octicon-alert"></span>
-  Flash message with an icon goes here.
-</div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flash flash-with-icon"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"octicon octicon-alert"</span><span class="nt">&gt;&lt;/span&gt;</span>
-  Flash message with an icon goes here.
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-<h2 id="dismiss">Dismiss</h2>
-
-<p>Add a JavaScript enabled (via Crema) dismiss (close) icon on the right of any flash message.</p>
-
-<div class="docs-example clearfix"><div class="flash">
-  <span class="octicon octicon-x flash-close js-flash-close"></span>
-  Dismissable flash message goes here.
-</div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flash"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"octicon octicon-x flash-close js-flash-close"</span><span class="nt">&gt;&lt;/span&gt;</span>
-  Dismissable flash message goes here.
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info alert-dismissable"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;h4&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-check"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Success Message Title<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is an example of a info message, it can be short or long, and <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"alert-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>contain links<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
