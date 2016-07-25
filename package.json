@@ -1,6 +1,6 @@
 {
   "name": "carbon",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "homepage": "http://l1f7.github.io/simplexmobility-styleguide/",
   "author": "Lift Interactive",
   "scss": "./scss/carbon.scss",
