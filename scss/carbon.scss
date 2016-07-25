@@ -44,7 +44,7 @@
 @import "vendor-extensions/bootstrap-tagsinput";
 
 // 0. Inspinia Bootstrap theme files.
-@import "themes/typography";
+// @import "themes/typography";
 @import "themes/navigation";
 @import "themes/top_navigation";
 @import "themes/buttons";
@@ -101,6 +101,7 @@
 // @import "base/typography";
 
 // 4. Layout section styles.
+@import "layout/grid";
 // @import "layout/header";
 // @import "layout/sidebar";
 

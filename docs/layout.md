@@ -5,10 +5,12 @@ title: Layout
 
 Carbon’s layout uses Bootstrap’s grid system—a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.
 
+
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
+
 
 ## Container
 
@@ -21,6 +23,7 @@ Center your page's contents with a `.container`.
 {% endhighlight %}
 
 Note that, due to `padding` and more, neither container is nestable.
+
 
 ## Grid
 
@@ -119,6 +122,58 @@ To nest your content with the default grid, **add a new `.row`** and set of `.co
         </div>
       </div>
     </div>
+  </div>
+</div>
+{% endexample %}
+
+
+## Greyscale grid
+
+Add some definition to your grid columns by adding `.container-scale` to your container element.
+
+This requires flexbox-enabled browsers so that row height is kept equal (column with the "tallest" content sets the height for the row). Column widths are set using the default Bootstrap classes; background colours are added automatically based on the number of columns in each row.
+
+{% example html %}
+<div class="container container-scale">
+  <div class="row">
+    <div class="col-md-6">.col-md-6</div>
+    <div class="col-md-6">.col-md-6</div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">.col-md-3</div>
+    <div class="col-md-3">.col-md-3</div>
+    <div class="col-md-3">.col-md-3</div>
+    <div class="col-md-3">.col-md-3</div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">.col-md-2</div>
+    <div class="col-md-2">.col-md-2</div>
+    <div class="col-md-2">.col-md-2</div>
+    <div class="col-md-2">.col-md-2</div>
+    <div class="col-md-2">.col-md-2</div>
+    <div class="col-md-2">.col-md-2</div>
+  </div>
+</div>
+{% endexample %}
+
+### Grid headers
+
+Add a title to a layout component with the `.grid-header` and `.grid-title` classes.
+
+{% example html %}
+<div class="container container-scale">
+  <header class="grid-header">
+    <h2 class="grid-title">Title</h2>
+  </header>
+  <div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
   </div>
 </div>
 {% endexample %}

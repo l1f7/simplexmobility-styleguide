@@ -1,0 +1,62 @@
+
+.container-scale {
+
+  .row {
+    display: flex;
+  }
+
+  [class^=col-] {
+
+    &:first-child {
+
+      // Matches if there are three columns.
+      &:nth-last-child(3) {
+
+        + div {
+          background-color: #f2f2f2;
+        }
+      }
+
+      // Six columns.
+      &:nth-last-child(6) {
+
+        + div {
+          background-color: #fbfbfb;
+
+          + div {
+            background-color: #f7f7f7;
+
+            + div {
+              background-color: #f3f3f3;
+
+              + div {
+                background-color: #ededed;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      background-color: $grey-210;
+    }
+  }
+}
+
+
+.grid-header {
+  @include make-row();
+
+  background-color: #9d9d9d;
+}
+
+.grid-title {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: $font-size-base;
+  font-weight: $headings-font-weight;
+  letter-spacing: 0.05em;
+  color: $white;
+  background-color: $brand-primary;
+}
