@@ -520,6 +520,14 @@ body {
     }
   }
 
+  .docs-widget {
+    position: relative;
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    border: 2px solid $grey-600;
+  }
+
   // Flex table
   .flex-table-item > .btn {
     margin-left: 10px;

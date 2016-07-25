@@ -1,0 +1,103 @@
+//
+// Progress indicators.
+//
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.spin {
+  // position: relative;
+  // display: inline-block;
+  // width: 64px;
+  // height: 64px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+    border: 8px solid;
+    border-color: $grey-400;
+    border-radius: 50%;
+    content: "";
+    opacity: 0.3;
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+    border: 8px solid transparent;
+    border-top-color: $grey-400;
+    border-radius: 50%;
+    content: "";
+    animation: rotate 750ms linear infinite;
+  }
+}
+
+
+// Contextual alternates.
+.spin-success {
+
+  &::before {
+    border-color: $brand-success;
+  }
+
+  &::after {
+    border-top-color: $brand-success;
+  }
+}
+
+.spin-info {
+
+  &::before {
+    border-color: $brand-info;
+  }
+
+  &::after {
+    border-top-color: $brand-info;
+  }
+}
+
+.spin-warning {
+
+  &::before {
+    border-color: $brand-warning;
+  }
+
+  &::after {
+    border-top-color: $brand-warning;
+  }
+}
+
+.spin-danger {
+
+  &::before {
+    border-color: $brand-danger;
+  }
+
+  &::after {
+    border-top-color: $brand-danger;
+  }
+}
+
+
+// Size options.
+.spin-sm {
+
+  &::before,
+  &::after {
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0 -16px;
+    border-width: 4px;
+  }
+}
