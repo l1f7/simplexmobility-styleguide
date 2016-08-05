@@ -13,7 +13,8 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'css/carbon.css': 'scss/carbon.scss'
+          'css/carbon.css': 'scss/carbon.scss',
+          '_site/docs.css': 'docs/docs.scss'
         }
       }
     },
@@ -29,7 +30,7 @@ module.exports = function(grunt) {
         src: 'css/*.css'
       },
       docs: {
-        src: '_site/*.css'
+        src: '_site/docs.css'
       }
     },
 
@@ -66,7 +67,7 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['scss/**/*.scss', 'docs/docs.scss'],
-        tasks: ['sass', 'postcss', 'parker']
+        tasks: ['sass', 'postcss', 'postcss:docs', 'parker']
       }
     },
 
@@ -80,7 +81,7 @@ module.exports = function(grunt) {
         options: {
           config: '_config.yml',
           serve: true,
-          raw: 'baseurl: ""'
+          raw: "baseurl: ''"
         }
       },
       dist: {
@@ -158,7 +159,7 @@ module.exports = function(grunt) {
   // Generate and format the CSS
   grunt.registerTask('default', ['sass', 'postcss', 'copy', 'jekyll:dist', 'parker']);
 
-  grunt.registerTask('serve', ['sass', 'postcss', 'copy', 'jekyll:serve']);
+  grunt.registerTask('serve', ['sass', 'postcss', 'postcss:docs', 'copy', 'jekyll:serve', 'watch']);
 
   // Publish to GitHub
   grunt.registerTask('publish', ['copy:dist', 'jekyll:dist', 'postcss:docs', 'buildcontrol:pages']);
