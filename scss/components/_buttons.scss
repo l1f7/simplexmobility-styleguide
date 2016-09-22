@@ -9,7 +9,11 @@
 // Action button.
 //
 .btn-action {
+  padding-top: 0.285714286em;
   padding-right: 0;
+  padding-bottom: 0.214285714em;
+  padding-left: 0.714285714em;
+  font-size: 14px;
   border-radius: 2em;
 }
 
@@ -17,10 +21,10 @@
   position: relative;
   top: -1px;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   padding: 2px;
-  margin: 0 0.4375em 0 0;
+  margin: 0 0.428571429em 0 0;
   vertical-align: middle;
   border: solid 1px;
   border-radius: 50%;
@@ -29,11 +33,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 17px;
+    width: 14px;
     height: 12px;
     margin-top: -6px;
     margin-left: -0.642855em;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
   }
 }
