@@ -1,0 +1,58 @@
+//
+// Data table sections.
+//
+
+.data {
+  margin-bottom: ($line-height-computed * 2);
+  box-shadow: 0 2px 7px rgba(#aaa, 0.5);
+}
+
+.data-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d4d4d4;
+}
+
+.data-title {
+  display: flex;
+  flex: 0 0 auto;
+  width: auto;
+  height: 44px;
+  padding: 0.6875em 1.1em;
+  color: $white;
+  background-color: $brand-blue;
+}
+
+.data-tabs {
+  .nav-pills {
+    > li {
+      margin-left: 0;
+      border-left: 0;
+
+      &.active {
+        > a {
+          font-weight: 500;
+          color: $white;
+        }
+      }
+
+      > a {
+        padding: 0.6875em 1.1em;
+        color: $grey-600;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.data-actions {
+  flex: 0 0 auto;
+  width: auto;
+  height: 44px;
+  padding: 8px 1.1em;
+
+  > .btn {
+    font-size: 14px;
+  }
+}

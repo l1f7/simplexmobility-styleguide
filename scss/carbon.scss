@@ -100,14 +100,15 @@
 // 3. Base stuff.
 // @import "base/typography";
 
-// 4. Layout section styles.
+// 4. Components.
+@import "components/buttons";
+@import "components/spinners";
+
+// 5. Layout section styles.
+@import "layout/data";
 @import "layout/grid";
 // @import "layout/header";
 // @import "layout/sidebar";
-
-// 5. Components.
-@import "components/buttons";
-@import "components/spinners";
 
 // 6. Page-specific styles.
 // @import "pages/dashboard";
