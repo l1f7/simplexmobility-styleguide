@@ -158,71 +158,591 @@
         Tables
       </h1>
       <div class="markdown-body">
-        <p>Add tooltips built entirely in CSS to nearly any element. Just add a few classes and an <code class="highlighter-rouge">aria-label</code> attribute.</p>
+        
+<div class="docs-example clearfix"><section class="data">
+  <header class="data-header">
+    <div class="data-title">May 2016 Billing Cycle</div>
+    <div class="data-actions">
+      <button class="btn btn-default btn-action" type="button">
+        View less
+        <span class="btn-icon" aria-hidden="true">
+          <i class="fa fa-fw fa-arrow-up"></i>
+        </span>
+      </button>
+    </div>
+  </header>
+  <div class="container container-scale">
+    <div class="row">
+      <div class="col-scale">.col-scale</div>
+      <div class="col-scale">.col-scale</div>
+      <div class="col-scale">.col-scale</div>
+    </div>
+  </div>
+</section>
 
-<p>In addition, you’ll want to specify a direction:</p>
+<section class="data">
+  <header class="data-header">
+    <div class="data-tabs">
+      <ul class="nav nav-pills">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Monthly Charges</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Data Charges</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Roaming Charges</a>
+        </li>
+      </ul>
+    </div>
+    <div class="data-actions"></div>
+  </header>
+  <div class="container container-scale">
+    <div class="row">
+      <div class="col-scale">1/7</div>
+      <div class="col-scale">1/7</div>
+      <div class="col-scale">1/7</div>
+      <div class="col-scale">1/7</div>
+      <div class="col-scale">1/7</div>
+      <div class="col-scale">1/7</div>
+      <div class="col-scale">1/7</div>
+    </div>
+  </div>
+</section>
 
-<ul>
-  <li><code class="highlighter-rouge">.tooltipped-n</code></li>
-  <li><code class="highlighter-rouge">.tooltipped-ne</code></li>
-  <li><code class="highlighter-rouge">.tooltipped-e</code></li>
-  <li><code class="highlighter-rouge">.tooltipped-se</code></li>
-  <li><code class="highlighter-rouge">.tooltipped-s</code></li>
-  <li><code class="highlighter-rouge">.tooltipped-sw</code></li>
-  <li><code class="highlighter-rouge">.tooltipped-w</code></li>
-  <li><code class="highlighter-rouge">.tooltipped-nw</code></li>
-</ul>
+<section class="data">
+  <header class="data-header">
+    <div class="data-title">May 2016 Stats</div>
+    <div class="data-actions"></div>
+  </header>
+  <div class="container container-scale">
+    <div class="row">
+      <div class="col-scale text-center">
+        <span class="text-title">Active</span>
+        <div class="stat stat-single">
+          <span class="stat-main text-success">45</span>
+          <span class="stat-secondary">55%</span>
+        </div>
+        <a class="btn btn-default btn-action" href="#">
+          View More
+          <span class="btn-icon" aria-hidden="true">
+            <i class="fa fa-fw fa-plus"></i>
+          </span>
+        </a>
+      </div>
+      <div class="col-scale text-center">
+        <span class="text-title">Active</span>
+        <div class="stat stat-single">
+          <span class="stat-main text-warning">20</span>
+          <span class="stat-secondary">100%</span>
+        </div>
+        <a class="btn btn-default btn-action" href="#">
+          View More
+          <span class="btn-icon" aria-hidden="true">
+            <i class="fa fa-fw fa-plus"></i>
+          </span>
+        </a>
+      </div>
+      <div class="col-scale text-center">
+        <span class="text-title">Active</span>
+        <div class="stat stat-single">
+          <div class="spin spin-sm spin-warning"></div>
+        </div>
+        <a class="btn btn-default btn-action" href="#">
+          View More
+          <span class="btn-icon" aria-hidden="true">
+            <i class="fa fa-fw fa-plus"></i>
+          </span>
+        </a>
+      </div>
+      <div class="col-scale text-center">
+        <span class="text-title">Active</span>
+        <div class="stat stat-single">
+          <span class="stat-main text-danger">0</span>
+          <span class="stat-secondary"></span>
+        </div>
+        <a class="btn btn-default btn-action" href="#">
+          View More
+          <span class="btn-icon" aria-hidden="true">
+            <i class="fa fa-fw fa-plus"></i>
+          </span>
+        </a>
+      </div>
+      <div class="col-scale text-center">
+        <span class="text-title">Active</span>
+        <div class="stat stat-single">
+          <span class="stat-main text-info">0</span>
+          <span class="stat-secondary"></span>
+        </div>
+        <a class="btn btn-default btn-action" href="#">
+          View More
+          <span class="btn-icon" aria-hidden="true">
+            <i class="fa fa-fw fa-plus"></i>
+          </span>
+        </a>
+      </div>
+      <div class="col-scale text-center">
+        <span class="text-title">Active</span>
+        <div class="stat stat-single">
+          <span class="stat-main text-danger">5</span>
+          <span class="stat-secondary"></span>
+        </div>
+        <a class="btn btn-default btn-action" href="#">
+          View More
+          <span class="btn-icon" aria-hidden="true">
+            <i class="fa fa-fw fa-plus"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-<p>Tooltip classes will conflict with Octicon classes, and as such, must go on a parent element instead of the icon.</p>
+<section class="data">
+  <header class="data-header">
+    <div class="data-tabs">
+      <ul class="nav nav-pills">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Earlier <span class="caret"></span></a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Data Charges <span class="badge">20</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Roaming Charges <span class="badge">0</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="data-actions"></div>
+  </header>
+  <table class="table table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Account</th>
+        <th>Devices</th>
+        <th>Avg Device Cost</th>
+        <th>Monthly Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Telus</td>
+        <td>65</td>
+        <td>$95.55</td>
+        <td>$1,595.55</td>
+      </tr>
+      <tr>
+        <td>Telus</td>
+        <td>65</td>
+        <td>$95.55</td>
+        <td>$1,595.55</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
-<div class="docs-example clearfix"><span class="tooltipped tooltipped-n border p-2 mb-2 mr-2 left" aria-label="This is the tooltip.">
-  Tooltip North
-</span>
-<span class="tooltipped tooltipped-ne border p-2 mb-2 mr-2 left" aria-label="This is the tooltip.">
-  Tooltip North East
-</span>
-<span class="tooltipped tooltipped-e border p-2 mb-2 mr-2 left" aria-label="This is the tooltip.">
-  Tooltip East
-</span>
-<span class="tooltipped tooltipped-se border p-2 mb-2 mr-2 left" aria-label="This is the tooltip.">
-  Tooltip South East
-</span>
-<span class="tooltipped tooltipped-s border p-2 mb-2 mr-2 left" aria-label="This is the tooltip.">
-  Tooltip South
-</span>
-<span class="tooltipped tooltipped-sw border p-2 mb-2 mr-2 left" aria-label="This is the tooltip.">
-  Tooltip South West
-</span>
-<span class="tooltipped tooltipped-w border p-2 mb-2 mr-2 left" aria-label="This is the tooltip.">
-  Tooltip West
-</span>
-<span class="tooltipped tooltipped-nw border p-2 mb-2 mr-2 left" aria-label="This is the tooltip.">
-  Tooltip North West
-</span></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tooltipped tooltipped-n border p-2 mb-2 mr-2 left"</span> <span class="na">aria-label=</span><span class="s">"This is the tooltip."</span><span class="nt">&gt;</span>
-  Tooltip North
-<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tooltipped tooltipped-ne border p-2 mb-2 mr-2 left"</span> <span class="na">aria-label=</span><span class="s">"This is the tooltip."</span><span class="nt">&gt;</span>
-  Tooltip North East
-<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tooltipped tooltipped-e border p-2 mb-2 mr-2 left"</span> <span class="na">aria-label=</span><span class="s">"This is the tooltip."</span><span class="nt">&gt;</span>
-  Tooltip East
-<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tooltipped tooltipped-se border p-2 mb-2 mr-2 left"</span> <span class="na">aria-label=</span><span class="s">"This is the tooltip."</span><span class="nt">&gt;</span>
-  Tooltip South East
-<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tooltipped tooltipped-s border p-2 mb-2 mr-2 left"</span> <span class="na">aria-label=</span><span class="s">"This is the tooltip."</span><span class="nt">&gt;</span>
-  Tooltip South
-<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tooltipped tooltipped-sw border p-2 mb-2 mr-2 left"</span> <span class="na">aria-label=</span><span class="s">"This is the tooltip."</span><span class="nt">&gt;</span>
-  Tooltip South West
-<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tooltipped tooltipped-w border p-2 mb-2 mr-2 left"</span> <span class="na">aria-label=</span><span class="s">"This is the tooltip."</span><span class="nt">&gt;</span>
-  Tooltip West
-<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tooltipped tooltipped-nw border p-2 mb-2 mr-2 left"</span> <span class="na">aria-label=</span><span class="s">"This is the tooltip."</span><span class="nt">&gt;</span>
-  Tooltip North West
-<span class="nt">&lt;/span&gt;</span></code></pre></div>
+<section class="data">
+  <header class="data-header">
+    <div class="data-title">Device Overview</div>
+    <div class="data-actions"></div>
+  </header>
+  <div class="container container-scale">
+    <div class="row">
+      <div class="col-scale">
+        <div class="row">
+          <div class="col-md-6">
+            Active <span class="badge badge-success">45</span>
+          </div>
+          <div class="col-md-6">
+            Cancelled <span class="badge badge-danger">0</span>
+          </div>
+          <div class="col-md-6">
+            Suspended <span class="badge badge-warning">20</span>
+          </div>
+          <div class="col-md-6">
+            With Billing <span class="badge badge-primary">1</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-scale">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="text-title">Monthly Cost <span class="text-success">$1,412</span></span>
+          </div>
+          <div class="col-md-12">
+            <span class="text-title">Average Cost <span class="text-success">$82</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-scale">
+        <div class="row">
+          <div class="col-md-4">
+            Aircard <span class="badge">2</span>
+          </div>
+          <div class="col-md-4">
+            Android <span class="badge">5</span>
+          </div>
+          <div class="col-md-4">
+            Blackberry <span class="badge">2</span>
+          </div>
+          <div class="col-md-4">
+            Cell phone <span class="badge">22</span>
+          </div>
+          <div class="col-md-4">
+            HUB <span class="badge">2</span>
+          </div>
+          <div class="col-md-4">
+            iPhone <span class="badge">40</span>
+          </div>
+          <div class="col-md-4">
+            Mike <span class="badge">2</span>
+          </div>
+          <div class="col-md-4">
+            Modem <span class="badge">22</span>
+          </div>
+          <div class="col-md-4">
+            Tablet <span class="badge">40</span>
+          </div>
+          <div class="col-md-4">
+            Anrdoid <span class="badge">5</span>
+          </div>
+          <div class="col-md-4">
+            Cell phone <span class="badge">22</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="data-header">
+    <div class="data-title">Device List</div>
+    <div class="data-actions"></div>
+  </header>
+  <div class="table-responsive">
+    <table class="table table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Account</th>
+          <th>Devices</th>
+          <th>Avg Device Cost</th>
+          <th>Monthly Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Telus</td>
+          <td>65</td>
+          <td>$95.55</td>
+          <td>$1,595.55</td>
+        </tr>
+        <tr>
+          <td>Telus</td>
+          <td>65</td>
+          <td>$95.55</td>
+          <td>$1,595.55</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"data"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"data-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"data-title"</span><span class="nt">&gt;</span>May 2016 Billing Cycle<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"data-actions"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default btn-action"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+        View less
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"btn-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-arrow-up"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container container-scale"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale"</span><span class="nt">&gt;</span>.col-scale<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale"</span><span class="nt">&gt;</span>.col-scale<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale"</span><span class="nt">&gt;</span>.col-scale<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"data"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"data-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"data-tabs"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-pills"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item active"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Monthly Charges<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Data Charges<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Roaming Charges<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"data-actions"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container container-scale"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale"</span><span class="nt">&gt;</span>1/7<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale"</span><span class="nt">&gt;</span>1/7<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale"</span><span class="nt">&gt;</span>1/7<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale"</span><span class="nt">&gt;</span>1/7<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale"</span><span class="nt">&gt;</span>1/7<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale"</span><span class="nt">&gt;</span>1/7<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale"</span><span class="nt">&gt;</span>1/7<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"data"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"data-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"data-title"</span><span class="nt">&gt;</span>May 2016 Stats<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"data-actions"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container container-scale"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"stat stat-single"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"stat-main text-success"</span><span class="nt">&gt;</span>45<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"stat-secondary"</span><span class="nt">&gt;</span>55%<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-default btn-action"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          View More
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"btn-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-plus"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"stat stat-single"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"stat-main text-warning"</span><span class="nt">&gt;</span>20<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"stat-secondary"</span><span class="nt">&gt;</span>100%<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-default btn-action"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          View More
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"btn-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-plus"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"stat stat-single"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spin spin-sm spin-warning"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-default btn-action"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          View More
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"btn-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-plus"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"stat stat-single"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"stat-main text-danger"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"stat-secondary"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-default btn-action"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          View More
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"btn-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-plus"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"stat stat-single"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"stat-main text-info"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"stat-secondary"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-default btn-action"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          View More
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"btn-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-plus"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"stat stat-single"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"stat-main text-danger"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"stat-secondary"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-default btn-action"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          View More
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"btn-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-plus"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"data"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"data-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"data-tabs"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-pills"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item dropdown"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Earlier <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item active"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Data Charges <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>20<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Roaming Charges <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"data-actions"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-striped table-condensed"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th&gt;</span>Account<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>Devices<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>Avg Device Cost<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>Monthly Cost<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Telus<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>65<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>$95.55<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>$1,595.55<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Telus<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>65<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>$95.55<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>$1,595.55<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"data"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"data-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"data-title"</span><span class="nt">&gt;</span>Device Overview<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"data-actions"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container container-scale"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6"</span><span class="nt">&gt;</span>
+            Active <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-success"</span><span class="nt">&gt;</span>45<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6"</span><span class="nt">&gt;</span>
+            Cancelled <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-danger"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6"</span><span class="nt">&gt;</span>
+            Suspended <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-warning"</span><span class="nt">&gt;</span>20<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6"</span><span class="nt">&gt;</span>
+            With Billing <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-primary"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-12"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>Monthly Cost <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-success"</span><span class="nt">&gt;</span>$1,412<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-12"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-title"</span><span class="nt">&gt;</span>Average Cost <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-success"</span><span class="nt">&gt;</span>$82<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-scale"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+            Aircard <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+            Android <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+            Blackberry <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+            Cell phone <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>22<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+            HUB <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+            iPhone <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>40<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+            Mike <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+            Modem <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>22<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+            Tablet <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>40<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+            Anrdoid <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+            Cell phone <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>22<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"data-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"data-title"</span><span class="nt">&gt;</span>Device List<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"data-actions"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-striped table-condensed"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;thead&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+          <span class="nt">&lt;th&gt;</span>Account<span class="nt">&lt;/th&gt;</span>
+          <span class="nt">&lt;th&gt;</span>Devices<span class="nt">&lt;/th&gt;</span>
+          <span class="nt">&lt;th&gt;</span>Avg Device Cost<span class="nt">&lt;/th&gt;</span>
+          <span class="nt">&lt;th&gt;</span>Monthly Cost<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;/thead&gt;</span>
+      <span class="nt">&lt;tbody&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+          <span class="nt">&lt;td&gt;</span>Telus<span class="nt">&lt;/td&gt;</span>
+          <span class="nt">&lt;td&gt;</span>65<span class="nt">&lt;/td&gt;</span>
+          <span class="nt">&lt;td&gt;</span>$95.55<span class="nt">&lt;/td&gt;</span>
+          <span class="nt">&lt;td&gt;</span>$1,595.55<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+          <span class="nt">&lt;td&gt;</span>Telus<span class="nt">&lt;/td&gt;</span>
+          <span class="nt">&lt;td&gt;</span>65<span class="nt">&lt;/td&gt;</span>
+          <span class="nt">&lt;td&gt;</span>$95.55<span class="nt">&lt;/td&gt;</span>
+          <span class="nt">&lt;td&gt;</span>$1,595.55<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;/tbody&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></div>
 
 <h3 id="tooltips-no-delay">Tooltips No Delay</h3>
 
