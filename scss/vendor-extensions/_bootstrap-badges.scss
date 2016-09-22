@@ -6,12 +6,19 @@
 
 .badge {
   padding: 4px 7px;
+}
 
-  // Account for badges in navs
-  .list-group-item.active > &,
-  .nav-pills > .active > a > & {
-    color: $badge-active-color;
-    background-color: $badge-active-bg;
+$badge-variants: (
+  primary: $brand-primary,
+  success: $brand-success,
+  info: $brand-info,
+  warning: $brand-warning,
+  danger: $brand-danger
+);
+
+@each $badge, $color in $badge-variants {
+  .badge-#{$badge} {
+    background-color: $color;
   }
 }
 
