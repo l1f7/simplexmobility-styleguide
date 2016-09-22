@@ -1,36 +1,221 @@
 
 .container-scale {
-
-  .row {
+  > .row {
     display: flex;
   }
 
-  [class^=col-] {
+  .col-scale {
+    flex: 1 1 auto;
+    padding: 20px;
 
     &:first-child {
+      background-color: $white;
 
       // Matches if there are three columns.
       &:nth-last-child(3) {
-
         + div {
-          background-color: #f2f2f2;
+          background-color: #f5f5f5;
+        }
+      }
+
+      // Matches if there are four columns.
+      &:nth-last-child(4) {
+        + div {
+          background-color: #f6f6f6;
+
+          + div {
+            background-color: #f0f0f0;
+          }
+        }
+      }
+
+      // Matches if there are five columns.
+      &:nth-last-child(5) {
+        + div {
+          background-color: #fbfbfb;
+
+          + div {
+            background-color: #f5f5f5;
+
+            + div {
+              background-color: #f0f0f0;
+            }
+          }
         }
       }
 
       // Six columns.
       &:nth-last-child(6) {
-
         + div {
           background-color: #fbfbfb;
 
           + div {
-            background-color: #f7f7f7;
+            background-color: #f6f6f6;
 
             + div {
               background-color: #f3f3f3;
 
               + div {
-                background-color: #ededed;
+                background-color: #eee;
+              }
+            }
+          }
+        }
+      }
+
+      // Seven columns.
+      &:nth-last-child(7) {
+        + div {
+          background-color: #fbfbfb;
+
+          + div {
+            background-color: #f6f6f6;
+
+            + div {
+              background-color: #f3f3f3;
+
+              + div {
+                background-color: #f1f1f1;
+
+                + div {
+                  background-color: #eee;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Eight columns.
+      &:nth-last-child(8) {
+        + div {
+          background-color: #fbfbfb;
+
+          + div {
+            background-color: #f6f6f6;
+
+            + div {
+              background-color: #f5f5f5;
+
+              + div {
+                background-color: #f3f3f3;
+
+                + div {
+                  background-color: #f1f1f1;
+
+                  + div {
+                    background-color: #eee;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Nine columns.
+      &:nth-last-child(9) {
+        + div {
+          background-color: #fbfbfb;
+
+          + div {
+            background-color: #f6f6f6;
+
+            + div {
+              background-color: #f5f5f5;
+
+              + div {
+                background-color: #f3f3f3;
+
+                + div {
+                  background-color: #f1f1f1;
+
+                  + div {
+                    background-color: #f0f0f0;
+
+                    + div {
+                      background-color: #eee;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Ten columns.
+      &:nth-last-child(10) {
+        + div {
+          background-color: #fbfbfb;
+
+          + div {
+            background-color: #f8f8f8;
+
+            + div {
+              background-color: #f6f6f6;
+
+              + div {
+                background-color: #f5f5f5;
+
+                + div {
+                  background-color: #f3f3f3;
+
+                  + div {
+                    background-color: #f1f1f1;
+
+                    + div {
+                      background-color: #f0f0f0;
+
+                      + div {
+                        background-color: #eee;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Twelve columns.
+      &:nth-last-child(12) {
+        + div {
+          background-color: #fdfdfd;
+
+          + div {
+            background-color: #fbfbfb;
+
+            + div {
+              background-color: #f8f8f8;
+
+              + div {
+                background-color: #f6f6f6;
+
+                + div {
+                  background-color: #f5f5f5;
+
+                  + div {
+                    background-color: #f3f3f3;
+
+                    + div {
+                      background-color: #f1f1f1;
+
+                      + div {
+                        background-color: #f0f0f0;
+
+                        + div {
+                          background-color: #eee;
+
+                          + div {
+                            background-color: #ebebeb;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -42,21 +227,4 @@
       background-color: $grey-210;
     }
   }
-}
-
-
-.grid-header {
-  @include make-row();
-
-  background-color: #9d9d9d;
-}
-
-.grid-title {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: $font-size-base;
-  font-weight: $headings-font-weight;
-  letter-spacing: 0.05em;
-  color: $white;
-  background-color: $brand-primary;
 }
