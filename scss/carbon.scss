@@ -48,7 +48,7 @@
 @import "themes/navigation";
 @import "themes/top_navigation";
 @import "themes/buttons";
-@import "themes/badgets_labels";
+// @import "themes/badgets_labels";
 @import "themes/elements";
 @import "themes/sidebar";
 @import "themes/base";
@@ -98,11 +98,12 @@
 @import "uploadbutton";
 
 // 3. Base stuff.
-// @import "base/typography";
+@import "base/typography";
 
 // 4. Components.
 @import "components/buttons";
 @import "components/spinners";
+@import "components/status";
 
 // 5. Layout section styles.
 @import "layout/data";
@@ -112,6 +113,9 @@
 
 // 6. Page-specific styles.
 // @import "pages/dashboard";
+
+// 7. Utility overrides.
+@import "utilities/typography";
 
 // Shamefile. Throw quick fixes/hacks here for later refactoring.
 @import "shame";

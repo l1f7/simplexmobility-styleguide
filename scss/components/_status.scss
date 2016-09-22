@@ -1,0 +1,21 @@
+//
+// Statistic blocks.
+//
+// Large numerical text with smaller percentage indicators.
+//
+
+.stat {
+  position: relative;
+  min-height: 44px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.stat-main {
+  font-size: ceil($font-size-base * 2.2857);
+  font-weight: 600;
+}
+
+.stat-secondary {
+  font-size: ceil($font-size-base * 1.285);
+}
