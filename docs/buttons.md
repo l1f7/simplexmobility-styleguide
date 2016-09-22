@@ -105,7 +105,7 @@ Disable `<button>` elements with the boolean `disabled` attribute and `<a>` elem
 You can also use the [badge](http://getbootstrap.com/components/#badges) component within buttons:
 
 {% example html %}
-<button class="btn btn-default" type="button">
+<button class="btn" type="button">
   Button
   <span class="badge">12</span>
 </button>

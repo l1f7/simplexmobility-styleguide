@@ -432,7 +432,7 @@ body {
 .docs-example {
   position: relative;
   padding: 15px;
-  font-size: 14px;
+  // font-size: 14px;
   line-height: 1.4;
   border: 1px solid #e5e5e5;
   border-radius: .25rem .25rem 0 0;
@@ -457,10 +457,7 @@ body {
     }
   }
 
-  > p:last-child,
-  > .menu:last-child,
-  > .tabnav:last-child,
-  > blockquote:last-child {
+  > :last-child {
     margin-bottom: 0;
   }
 
@@ -473,8 +470,8 @@ body {
   // Grid
   .container {
     width: 100%;
-    padding-left: $grid-gutter;
-    padding-right: $grid-gutter;
+    // padding-left: $grid-gutter;
+    // padding-right: $grid-gutter;
 
     &:not(.container-scale) {
 
@@ -492,13 +489,16 @@ body {
   }
 
   [class^=col-] {
-    padding: $grid-gutter;
     font-family: $mono-font;
 
-    > .row {
-      margin-top: $grid-gutter;
-      margin-right: -$grid-gutter;
-      margin-left: -$grid-gutter;
+    &:not(.col-scale) {
+      padding: $grid-gutter;
+
+      > .row {
+        margin-top: $grid-gutter;
+        margin-right: -$grid-gutter;
+        margin-left: -$grid-gutter;
+      }
     }
   }
 
