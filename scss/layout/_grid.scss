@@ -2,10 +2,26 @@
 .container-scale {
   > .row {
     display: flex;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+
+    + .row {
+      border-top: 1px solid $black-divider;
+    }
+
+    &.scale-2-up {
+      > .col-scale {
+        @media (max-width: 768px) {
+          flex: 1 1 50%;
+        }
+      }
+    }
   }
 
   .col-scale {
-    flex: 1 1 auto;
+    flex: 1 1 100%;
     padding: 20px;
 
     &:first-child {
@@ -225,6 +241,10 @@
 
     &:last-child {
       background-color: $grey-210;
+
+      &:first-child {
+        background-color: $white;
+      }
     }
   }
 }

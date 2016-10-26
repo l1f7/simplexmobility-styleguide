@@ -1,0 +1,25 @@
+//
+// Device search form.
+//
+
+.search-form {
+  position: absolute;
+  display: inline-block;
+  width: 435px;
+  height: 59px;
+  margin: 12.5px;
+  margin-left: 26px;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  .select2-arrow {
+    display: none;
+  }
+
+  .select2-chosen {
+    margin-right: 0;
+  }
+}

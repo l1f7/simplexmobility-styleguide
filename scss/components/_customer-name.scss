@@ -1,0 +1,22 @@
+// Customer Select dropdown.
+
+.customer-name {
+  display: inline-block;
+  height: 59px;
+  min-width: 150px;
+  vertical-align: middle;
+
+  h2,
+  h3 {
+    position: relative;
+    top: 50%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: $white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: translateY(-54.7%);
+  }
+}

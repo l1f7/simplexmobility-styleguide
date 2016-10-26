@@ -8,7 +8,7 @@
 @import "abstracts/variables";
 // @import "abstracts/functions";
 // @import "abstracts/mixins";
-// @import "abstracts/placeholders";
+@import "abstracts/placeholders";
 
 // 2. Vendor & plugin styles.
 //= require datatables
@@ -38,6 +38,7 @@
 @import "vendor-extensions/bootstrap-buttons";
 @import "vendor-extensions/bootstrap-labels";
 @import "vendor-extensions/bootstrap-badges";
+@import "vendor-extensions/bootstrap-navbar";
 @import "vendor-extensions/bootstrap-alerts";
 
 @import "vendor-extensions/autocomplete";
@@ -60,7 +61,7 @@
 @import "themes/media";
 
 // 0a. Initial styles.
-@import "margins";
+// @import "margins";
 @import "panels";
 @import "rounded";
 
@@ -102,19 +103,22 @@
 
 // 4. Components.
 @import "components/buttons";
+@import "components/customer-name";
+@import "components/search";
 @import "components/spinners";
 @import "components/status";
 
 // 5. Layout section styles.
 @import "layout/data";
 @import "layout/grid";
-// @import "layout/header";
-// @import "layout/sidebar";
+@import "layout/header";
+@import "layout/sidebar";
 
 // 6. Page-specific styles.
 // @import "pages/dashboard";
 
 // 7. Utility overrides.
+@import "utilities/spacing";
 @import "utilities/typography";
 
 // Shamefile. Throw quick fixes/hacks here for later refactoring.

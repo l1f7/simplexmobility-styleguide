@@ -1,0 +1,55 @@
+//
+// Bootstrap Navbar style overrides.
+//
+
+.navbar {
+  border-radius: 0;
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
+}
+
+
+
+
+// Navbar toggle.
+.navbar-toggle {
+  float: none;
+  margin-right: 0;
+  font-size: 12px;
+  background: none;
+  border: 0;
+
+  > .fa {
+    position: relative;
+    top: -1px;
+  }
+}
+
+
+
+
+.navbar-nav {
+  &.navbar-right {
+    @media (max-width: 768px) {
+      float: right;
+    }
+  }
+
+  .nav-label {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  > li {
+    > a {
+      padding: 20px 10px;
+
+      @media (max-width: 768px) {
+        padding: 13px 10px;
+      }
+    }
+  }
+}
