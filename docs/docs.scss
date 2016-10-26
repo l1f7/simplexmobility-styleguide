@@ -107,43 +107,43 @@ body {
 
 .c-docs-nav {
   border-radius: 0;
-}
 
-.navbar {
-  background-color: $brand-primary-color;
+  .navbar {
+    background-color: $brand-primary-color;
 
-  > .container {
+    > .container {
 
-    .navbar-brand {
-      display: inline-block;
-      height: auto;
-      padding: 1rem 15px;
-      font-size: 1.5rem;
-      line-height: 32px;
-      color: $white;
+      .navbar-brand {
+        display: inline-block;
+        height: auto;
+        padding: 1rem 15px;
+        font-size: 1.5rem;
+        line-height: 32px;
+        color: $white;
 
-      .mega-octicon {
-        float: left;
-        margin-right: 0.5rem;
+        .mega-octicon {
+          float: left;
+          margin-right: 0.5rem;
+        }
       }
     }
   }
-}
 
-.navbar-nav {
+  .navbar-nav {
 
-  > li {
+    > li {
 
-    > a {
-      padding: 1rem;
-      font-weight: 500;
-      line-height: 32px;
-      color: rgba($white, 0.5);
+      > a {
+        padding: 1rem;
+        font-weight: 500;
+        line-height: 32px;
+        color: rgba($white, 0.5);
 
-      &:hover,
-      &:focus {
-        color: $white;
-        background-color: rgba($white, 0.25);
+        &:hover,
+        &:focus {
+          color: $white;
+          background-color: rgba($white, 0.25);
+        }
       }
     }
   }
