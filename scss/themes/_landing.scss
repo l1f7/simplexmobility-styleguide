@@ -168,7 +168,7 @@ body.landing-page {
   }
 
   .nav > li > a {
-    padding: 25px 10px 15px 10px;
+    // padding: 25px 10px 15px 10px;
   }
   .navbar-scroll .navbar-nav > li > a {
     padding: 20px 10px;
@@ -605,9 +605,9 @@ body.landing-page {
       border-radius: 0;
     }
 
-    .nav > li > a {
-      padding: 25px 10px 15px 10px;
-    }
+    // .nav > li > a {
+    //   padding: 25px 10px 15px 10px;
+    // }
 
     .navbar-nav > li > a {
       padding: 20px 10px;
@@ -647,11 +647,11 @@ body.landing-page {
       float: none;
     }
 
-    .navbar .navbar-header .navbar-toggle {
-      background-color: #ffffff;
-      padding: 9px 10px;
-      border: none;
-    }
+    // .navbar .navbar-header .navbar-toggle {
+    //   background-color: #ffffff;
+    //   padding: 9px 10px;
+    //   border: none;
+    // }
   }
 
 }
